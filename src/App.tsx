@@ -1,8 +1,30 @@
-import { ChangeEvent, FC, MouseEvent, useCallback, useRef, useState } from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import {
+  ChangeEvent,
+  Dispatch,
+  FC,
+  FormEvent,
+  Fragment,
+  MouseEvent,
+  SetStateAction,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
 import { v4 as uuid } from "uuid";
 
 import styles from "./App.module.css";
 import DATA from "./data.json";
+
+const CHARACTERS = DATA.characters;
+CHARACTERS.sort();
+
+const PERKS = DATA.perks;
+PERKS.sort();
+
+const SURVIVOR_CHARACTERS = CHARACTERS.filter(c => c.type === "survivor");
+
+const SURVIVOR_PERKS = PERKS.filter(p => p.type === "survivor");
 
 function shuffle<T>(items: T[]): T[] {
   const itemIndexes = items.map((_, i) => i);
@@ -26,16 +48,14 @@ function pick<T>(amount: number, items: T[]): T[] {
   return shuffle(items).slice(0, 4);
 }
 
-const SURVIVOR_PERKS = DATA.perks.filter(p => p.type === "survivor");
-
 type Perk = {
   id: string;
   name: string;
 };
 
 type Player = {
-  availableCharacters: string[],
-  availablePerks: string[],
+  availableCharacters: string[];
+  availablePerks: string[];
   id: string;
   isRandomizing: boolean;
   name: string;
@@ -46,7 +66,137 @@ type RandomizedPerks = {
 };
 
 type EditPlayerDialogProps = {
-  player: Player,
+  onClose: () => void;
+  onSubmit: (newPlayer: Player) => void;
+  player: Player;
+};
+
+const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
+  onClose,
+  onSubmit,
+  player,
+}) => {
+  const [availableCharacters, setAvailableCharacters] = useState(
+    player.availableCharacters
+  );
+  const [name, setName] = useState(player.name);
+
+  const handleCancel = useCallback(
+    (ev: MouseEvent<HTMLButtonElement>) => {
+      ev.preventDefault();
+      onClose();
+    },
+    [onClose]
+  );
+
+  const handleCharacterSelect = useCallback(
+    (id: string) => (_: ChangeEvent<HTMLInputElement>) => {
+      setAvailableCharacters((a) => {
+        if (a.includes(id)) {
+          return a.filter((c) => c !== id);
+        }
+
+        return [...a, id];
+      });
+    },
+    [setAvailableCharacters]
+  );
+
+  const handleCharacterSelectAll = useCallback(
+    (_: ChangeEvent<HTMLInputElement>) => {
+      setAvailableCharacters((a) => {
+        if (a.length === SURVIVOR_CHARACTERS.length) return [];
+
+        return SURVIVOR_CHARACTERS.map((c) => c.id);
+      });
+    },
+    [setAvailableCharacters]
+  );
+
+  const handleNameChange = useCallback(
+    (ev: ChangeEvent<HTMLInputElement>) => {
+      setName(ev.target.value);
+    },
+    [setName]
+  );
+
+  const handleSubmit = useCallback(
+    (ev: FormEvent<HTMLFormElement>) => {
+      ev.preventDefault();
+
+      onSubmit({
+        ...player,
+        name,
+      });
+    },
+    [name, onSubmit, player]
+  );
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h3>Edit Player</h3>
+      <p>Do stuff</p>
+      <label>Name</label>
+      <input onChange={handleNameChange} value={name} />
+      <label>Available Characters</label>
+      <p>
+        <input
+          checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
+          id="character-all"
+          name="character-all"
+          onChange={handleCharacterSelectAll}
+          type="checkbox"
+        />
+        <label htmlFor="character-all">Select all</label>
+      </p>
+      <p>
+        {SURVIVOR_CHARACTERS.map((character) => (
+            <Fragment key={character.id}>
+              <input
+                checked={availableCharacters.includes(character.id)}
+                id={`character-${character.id}`}
+                name={`character-${character.id}`}
+                onChange={handleCharacterSelect(character.id)}
+                type="checkbox"
+              />
+              <label htmlFor={`character-${character.id}`}>
+                {character.name}
+              </label>
+            </Fragment>
+          ))}
+      </p>
+
+      <label>Available Perks</label>
+      <p>
+        <input
+          checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
+          id="perk-all"
+          name="perk-all"
+          onChange={handleCharacterSelectAll}
+          type="checkbox"
+        />
+        <label htmlFor="perk-all">Select all</label>
+      </p>
+      <p>
+        {SURVIVOR_PERKS.map((perk) => (
+            <Fragment key={perk.id}>
+              <input
+                checked={availableCharacters.includes(perk.id)}
+                id={`perk-${perk.id}`}
+                name={`perk-${perk.id}`}
+                onChange={handleCharacterSelect(perk.id)}
+                type="checkbox"
+              />
+              <label htmlFor={`perk-${perk.id}`}>
+                {perk.name}
+              </label>
+            </Fragment>
+          ))}
+      </p>
+      <button role="submit">Submit</button>
+      <button onClick={handleCancel}>Cancel</button>
+    </form>
+  );
 };
 
 export const App: FC = () => {
@@ -93,17 +243,39 @@ export const App: FC = () => {
       ev.preventDefault();
 
       setPlayers((p) => p.filter((p) => p.id !== id));
-      setRandomizingPlayers((r) => r.filter((i) => i !== id));
     },
-    [setPlayers, setRandomizingPlayers]
+    [setPlayers]
   );
 
-  const handlePlayerEdit = useCallback((id: string) => (ev: MouseEvent<HTMLAnchorElement>) => {
-    ev.preventDefault();
+  const handlePlayerEditCancel = useCallback(() => {
+    setEditPlayerState(null);
+    dialogRef.current?.close();
+  }, [dialogRef, setEditPlayerState]);
 
-    setEditPlayerState(id);
-    dialogRef?.current?.showModal();
-  }, [setEditPlayerState]);
+  const handlePlayerEditOpen = useCallback(
+    (id: string) => (ev: MouseEvent<HTMLAnchorElement>) => {
+      ev.preventDefault();
+
+      setEditPlayerState(id);
+      dialogRef.current?.showModal();
+    },
+    [dialogRef, setEditPlayerState]
+  );
+
+  const handlePlayerEditSubmit = useCallback(
+    (newPlayer: Player) => {
+      setEditPlayerState(null);
+      setPlayers((p) =>
+        p.map((player) => {
+          if (player.id !== newPlayer.id) return player;
+
+          return newPlayer;
+        })
+      );
+      dialogRef.current?.close();
+    },
+    [dialogRef, setEditPlayerState, setPlayers]
+  );
 
   const handlePerksPooledChange = useCallback(
     (_: ChangeEvent<HTMLInputElement>) => {
@@ -116,51 +288,66 @@ export const App: FC = () => {
     (ev: MouseEvent<HTMLButtonElement>) => {
       ev.preventDefault();
 
+      const randomizingPlayers = players.filter(
+        ({ isRandomizing }) => isRandomizing
+      );
       const randomizedPerks: RandomizedPerks = {};
 
       if (arePerksPooled) {
-        const selectedPerks = pick(4 * randomizingPlayers.length, SURVIVOR_PERKS).map(
-          (perk) => perk.id
-        );
+        const selectedPerks = pick(
+          4 * randomizingPlayers.length,
+          SURVIVOR_PERKS
+        ).map((perk) => perk.id);
 
-        randomizingPlayers.forEach((playerId, i) => {
+        randomizingPlayers.forEach((player, i) => {
           const perks = [];
 
           for (const perkIndex of [0, 1, 2, 3]) {
             perks.push(selectedPerks[perkIndex + 4 * i]);
           }
 
-          randomizedPerks[playerId] = perks;
+          randomizedPerks[player.id] = perks;
         });
       } else {
-        for (const playerId of randomizingPlayers) {
-          randomizedPerks[playerId] = pick(4, SURVIVOR_PERKS).map((perk) => perk.id);
+        for (const { id } of randomizingPlayers) {
+          randomizedPerks[id] = pick(4, SURVIVOR_PERKS).map((perk) => perk.id);
         }
       }
 
       setRandomizedPerks(randomizedPerks);
     },
-    [arePerksPooled, randomizingPlayers, setRandomizedPerks]
+    [arePerksPooled, players, setRandomizedPerks]
   );
 
   const handleRandomizingPlayerToggle = useCallback(
     (id: string) => (ev: MouseEvent<HTMLAnchorElement>) => {
       ev.preventDefault();
 
-      setRandomizingPlayers((r) => {
-        if (r.includes(id)) {
-          return r.filter((i) => i !== id);
-        }
+      setPlayers((p) =>
+        p.map((player) => {
+          if (player.id !== id) return player;
 
-        return [...r, id];
-      });
+          return {
+            ...player,
+            isRandomizing: !player.isRandomizing,
+          };
+        })
+      );
     },
-    [setRandomizingPlayers]
+    [setPlayers]
   );
 
   return (
     <>
-      <dialog ref={dialogRef}></dialog>
+      <dialog ref={dialogRef}>
+        {editPlayerState && (
+          <EditPlayerDialog
+            onClose={handlePlayerEditCancel}
+            onSubmit={handlePlayerEditSubmit}
+            player={players.find((p) => p.id === editPlayerState)!}
+          />
+        )}
+      </dialog>
       <header>
         <h1>DBD Perk Randomizer</h1>
       </header>
@@ -186,14 +373,14 @@ export const App: FC = () => {
                 {players.map((player) => (
                   <li className={styles.playerInput} key={player.id}>
                     {player.name}
-                    <a href="#" onClick={handlePlayerEdit(player.id)}>[Edit]</a>
+                    <a href="#" onClick={handlePlayerEditOpen(player.id)}>
+                      [Edit]
+                    </a>
                     <a
                       href="#"
                       onClick={handleRandomizingPlayerToggle(player.id)}
                     >
-                      {randomizingPlayers.includes(player.id)
-                        ? "[Exclude]"
-                        : "[Include]"}
+                      {player.isRandomizing ? "[Exclude]" : "[Include]"}
                     </a>
                     <a href="#" onClick={handlePlayerDelete(player.id)}>
                       [Delete]
@@ -216,27 +403,28 @@ export const App: FC = () => {
           <header>
             <h3>Results</h3>
           </header>
-          {randomizingPlayers.map((playerId) => {
-            const player = players.find((p) => p.id === playerId)!;
-            const perks = randomizedPerks[playerId];
+          {players
+            .filter((p) => p.isRandomizing)
+            .map((player) => {
+              const perks = randomizedPerks[player.id];
 
-            return (
-              <aside className={styles.result} key={playerId}>
-                <h4>{player.name}</h4>
-                {!perks?.length ? (
-                  <p>No perks selected</p>
-                ) : (
-                  <ul>
-                    {perks.map((perkId) => {
-                      const perk = DATA.perks.find((p) => p.id === perkId)!;
+              return (
+                <aside className={styles.result} key={player.id}>
+                  <h4>{player.name}</h4>
+                  {!perks?.length ? (
+                    <p>No perks selected</p>
+                  ) : (
+                    <ul>
+                      {perks.map((perkId) => {
+                        const perk = PERKS.find((p) => p.id === perkId)!;
 
-                      return <li key={perkId}>{perk.name}</li>;
-                    })}
-                  </ul>
-                )}
-              </aside>
-            );
-          })}
+                        return <li key={perkId}>{perk.name}</li>;
+                      })}
+                    </ul>
+                  )}
+                </aside>
+              );
+            })}
           <p className={styles.randomize}>
             <button onClick={handleRandomize}>Randomize</button>
           </p>
