@@ -1,0 +1,2031 @@
+{
+    "characters": [
+        {
+            "id": "6ae26b96-1d3b-466b-af9d-1a564db432a4",
+            "name": "The Nurse",
+            "type": "killer"
+        },
+        {
+            "id": "d53096a3-8f2c-44bb-8e4b-d8a2034aeb09",
+            "name": "Ace Visconti",
+            "type": "survivor"
+        },
+        {
+            "id": "c1e75b84-8926-4e47-81d4-b1de0f2b06db",
+            "name": "Meg Thomas",
+            "type": "survivor"
+        },
+        {
+            "id": "1a80eaf1-32c2-493f-91b9-2299f5caa05b",
+            "name": "Jeff Johansen",
+            "type": "survivor"
+        },
+        {
+            "id": "20c91fbc-172f-4c30-8d49-b617dd4f6056",
+            "name": "The Trapper",
+            "type": "killer"
+        },
+        {
+            "id": "0806c57b-be69-4e95-90bb-0ca69e7c2850",
+            "name": "Feng Min",
+            "type": "survivor"
+        },
+        {
+            "id": "14eec18d-2d4b-4730-b5f0-18801bcd397b",
+            "name": "The Xenomorph",
+            "type": "killer"
+        },
+        {
+            "id": "c8c31915-5155-4e06-9123-b7fa7d6a0291",
+            "name": "Yui Kimura",
+            "type": "survivor"
+        },
+        {
+            "id": "49642657-2144-44af-a0a2-c4609cad8702",
+            "name": "Elodie Rakoto",
+            "type": "survivor"
+        },
+        {
+            "id": "25dc74f4-81d6-47b6-8381-e5c27072b03e",
+            "name": "Adam Francis",
+            "type": "survivor"
+        },
+        {
+            "id": "3161803c-5314-4201-9db2-54638ca1c0d8",
+            "name": "The Mastermind",
+            "type": "killer"
+        },
+        {
+            "id": "7c7da62a-0f8b-43d5-a58c-b6956a7549e3",
+            "name": "Steve Harrington",
+            "type": "survivor"
+        },
+        {
+            "id": "6cdc2e78-8a1c-4a09-ba69-6e4ce62171c5",
+            "name": "Renato Lyra",
+            "type": "survivor"
+        },
+        {
+            "id": "577c3ba7-b438-4282-9902-99dcdfd22a4a",
+            "name": "Nea Karlsson",
+            "type": "survivor"
+        },
+        {
+            "id": "4b0e5759-4097-4407-9d7a-16b8fa75db17",
+            "name": "The Clown",
+            "type": "killer"
+        },
+        {
+            "id": "d844d8ae-da1a-426b-90e5-380ba27726be",
+            "name": "The Cannibal",
+            "type": "killer"
+        },
+        {
+            "id": "e1eacae1-1641-42f0-a24e-7695b6e2703d",
+            "name": "Aestri Yazar",
+            "type": "survivor"
+        },
+        {
+            "id": "1f2d58f5-bd06-4e77-8a67-78b9dd118e08",
+            "name": "The Good Guy",
+            "type": "killer"
+        },
+        {
+            "id": "c0d59d81-fe7c-4162-899d-3d0332e60d93",
+            "name": "The Huntress",
+            "type": "killer"
+        },
+        {
+            "id": "737a81ea-704c-4071-8a4d-2159691e36e6",
+            "name": "Rebecca Chambers",
+            "type": "survivor"
+        },
+        {
+            "id": "cf8e9eaf-7f01-4614-8151-5f7d5ca4e6d8",
+            "name": "Nancy Wheeler",
+            "type": "survivor"
+        },
+        {
+            "id": "31475692-3b23-459b-9263-d93ffe27d9a1",
+            "name": "Leon S. Kennedy",
+            "type": "survivor"
+        },
+        {
+            "id": "45ddff75-55bf-4d09-8837-626a654b8028",
+            "name": "Jill Valentine",
+            "type": "survivor"
+        },
+        {
+            "id": "cd60e791-f20c-4819-8280-18323732c36a",
+            "name": "The Oni",
+            "type": "killer"
+        },
+        {
+            "id": "b80a3055-f8e1-481b-acbb-a8684c270bf3",
+            "name": "Cheryl Mason",
+            "type": "survivor"
+        },
+        {
+            "id": "30d179f3-307e-4e7f-a320-063af9c922a2",
+            "name": "The Nightmare",
+            "type": "killer"
+        },
+        {
+            "id": "11dd781f-65c4-406e-ad27-460afbacee44",
+            "name": "The Wraith",
+            "type": "killer"
+        },
+        {
+            "id": "a2552416-1c5d-4a34-a204-4200e62f7375",
+            "name": "Kate Denson",
+            "type": "survivor"
+        },
+        {
+            "id": "ed7de5d2-7e46-4350-bec7-c15806404c18",
+            "name": "Dwight Fairfield",
+            "type": "survivor"
+        },
+        {
+            "id": "0ca38bf5-468e-4d6b-90d6-779141d133ef",
+            "name": "Mikaela Reid",
+            "type": "survivor"
+        },
+        {
+            "id": "41b2b4e6-c271-4892-a7e0-08720f8e43b9",
+            "name": "Yoichi Asakawa",
+            "type": "survivor"
+        },
+        {
+            "id": "37a65c5b-84fd-42d6-962b-9e6e952241ae",
+            "name": "Jonah Vasquez",
+            "type": "survivor"
+        },
+        {
+            "id": "cd5640db-3c85-400f-b60b-7296b193a135",
+            "name": "Alan Wake",
+            "type": "survivor"
+        },
+        {
+            "id": "f0a1f99b-bcd2-4c69-9d45-3e62e7c8717e",
+            "name": "William \"Bill\" Overbeck",
+            "type": "survivor"
+        },
+        {
+            "id": "13bf540c-252c-4d24-a59b-e63f96a8b72b",
+            "name": "Claudette Morel",
+            "type": "survivor"
+        },
+        {
+            "id": "426e3f01-59aa-450b-95b4-43feb6ca0d56",
+            "name": "Ashley J. Williams",
+            "type": "survivor"
+        },
+        {
+            "id": "0ec673d0-f1dc-441a-8962-6c2113d4e865",
+            "name": "Felix Richter",
+            "type": "survivor"
+        },
+        {
+            "id": "4cb0bb39-b372-49d9-beca-b74516664026",
+            "name": "The Onry\u014d",
+            "type": "killer"
+        },
+        {
+            "id": "45721f54-6eae-495a-84a5-0b446d5f5975",
+            "name": "Jake Park",
+            "type": "survivor"
+        },
+        {
+            "id": "54a313aa-e8f1-4845-a7a9-ee411a4c2573",
+            "name": "Ellen Ripley",
+            "type": "survivor"
+        },
+        {
+            "id": "af9ce8cb-c331-4e84-ba0d-92bef359a86c",
+            "name": "The Plague",
+            "type": "killer"
+        },
+        {
+            "id": "1858bb77-fe37-4ddf-ae77-d230efdf5de2",
+            "name": "The Twins",
+            "type": "killer"
+        },
+        {
+            "id": "e4c42d5b-0cc0-494c-8447-81372f5775a7",
+            "name": "The Demogorgon",
+            "type": "killer"
+        },
+        {
+            "id": "79793846-cbd2-446a-b9bc-54db1ee3a7f2",
+            "name": "Thalita Lyra",
+            "type": "survivor"
+        },
+        {
+            "id": "4e46d4ff-b5bc-4247-9bd9-a28d528fbb34",
+            "name": "The Lich",
+            "type": "killer"
+        },
+        {
+            "id": "d5314e20-818e-4f25-a84c-940ba5318215",
+            "name": "The Dredge",
+            "type": "killer"
+        },
+        {
+            "id": "cbdedd7a-f150-4589-b3ca-8cbb7adc6112",
+            "name": "David King",
+            "type": "survivor"
+        },
+        {
+            "id": "e3395987-636b-4435-871c-e8f87d666721",
+            "name": "The Deathslinger",
+            "type": "killer"
+        },
+        {
+            "id": "c88c41a5-9d90-4a0e-ae96-e13a5d65092b",
+            "name": "The Cenobite",
+            "type": "killer"
+        },
+        {
+            "id": "b6365ae4-14fa-4a96-b40a-113d9aca58d8",
+            "name": "The Executioner",
+            "type": "killer"
+        },
+        {
+            "id": "5c071976-e2c8-40e2-a063-71d504d3563b",
+            "name": "Laurie Strode",
+            "type": "survivor"
+        },
+        {
+            "id": "db1c681a-23a3-468b-b11b-bb0651ebb444",
+            "name": "Detective Tapp",
+            "type": "survivor"
+        },
+        {
+            "id": "56673659-273d-4cb1-a2eb-74503655a683",
+            "name": "The Legion",
+            "type": "killer"
+        },
+        {
+            "id": "7a1b9bd2-7dbc-47cb-bd77-7906ecbca1d5",
+            "name": "The Dark Lord",
+            "type": "killer"
+        },
+        {
+            "id": "a1e806bc-355c-4a8a-808a-80cd1cec9642",
+            "name": "The Blight",
+            "type": "killer"
+        },
+        {
+            "id": "c4054866-0c9d-493d-bd27-dacd07ef7b41",
+            "name": "Nicolas Cage",
+            "type": "survivor"
+        },
+        {
+            "id": "dc041250-9a07-4730-956e-dafd929de90e",
+            "name": "The Shape",
+            "type": "killer"
+        },
+        {
+            "id": "038b5012-2321-49a1-b9bb-b590a998b40e",
+            "name": "The Hillbilly",
+            "type": "killer"
+        },
+        {
+            "id": "f6f2c95a-e8b0-4dc9-bee3-01e15f65894b",
+            "name": "The Nemesis",
+            "type": "killer"
+        },
+        {
+            "id": "cf6f3839-9c30-421e-8f46-43f6ceec3d1f",
+            "name": "Trevor Belmont",
+            "type": "survivor"
+        },
+        {
+            "id": "f24d8384-383d-4098-acf6-7e264878c6ba",
+            "name": "Yun-Jin Lee",
+            "type": "survivor"
+        },
+        {
+            "id": "1e28b0d9-7afb-4e19-a0c9-7d2212a89a04",
+            "name": "Lara Croft",
+            "type": "survivor"
+        },
+        {
+            "id": "77c438f0-43d7-4ad5-895b-351a464946ec",
+            "name": "Vittorio Toscano",
+            "type": "survivor"
+        },
+        {
+            "id": "255f8ca3-b6d9-45c2-bef5-69f4de74b78a",
+            "name": "Zarina Kassir",
+            "type": "survivor"
+        },
+        {
+            "id": "ab2fb514-8628-4c62-90ca-28ade59e4b1d",
+            "name": "The Singularity",
+            "type": "killer"
+        },
+        {
+            "id": "057ed410-a432-4132-b843-cdee7fea2d81",
+            "name": "Gabriel Soma",
+            "type": "survivor"
+        },
+        {
+            "id": "8f780fad-ff33-4561-b36d-3b42c5e67008",
+            "name": "The Pig",
+            "type": "killer"
+        },
+        {
+            "id": "e35afe6e-79f7-4de2-94b7-2f0fb674575f",
+            "name": "The Artist",
+            "type": "killer"
+        },
+        {
+            "id": "f1e1ead6-a007-4c53-b09a-60d0268d3b25",
+            "name": "Jane Romero",
+            "type": "survivor"
+        },
+        {
+            "id": "2a02f79e-d771-4def-9027-4bcb2b5592cb",
+            "name": "The Spirit",
+            "type": "killer"
+        },
+        {
+            "id": "0c1aeecc-c3a2-4044-acfb-e2f36fb97c51",
+            "name": "The Trickster",
+            "type": "killer"
+        },
+        {
+            "id": "2e5f0391-7c77-446a-aa40-a579b6783deb",
+            "name": "Sable Ward",
+            "type": "survivor"
+        },
+        {
+            "id": "012ce4bf-6ff7-4432-b2fd-5b3993a36fee",
+            "name": "The Ghost Face",
+            "type": "killer"
+        },
+        {
+            "id": "b3ee7bda-7155-4bbc-8177-ce251fce4c55",
+            "name": "The Skull Merchant",
+            "type": "killer"
+        },
+        {
+            "id": "f91cbd8e-78f3-4cee-9c8f-a3e4e8541037",
+            "name": "The Unknown",
+            "type": "killer"
+        },
+        {
+            "id": "fb950bf2-bf62-4e12-b295-7d03e61a32d4",
+            "name": "Quentin Smith",
+            "type": "survivor"
+        },
+        {
+            "id": "9d1222b5-c80e-4748-a090-882400f3d90e",
+            "name": "Ada Wong",
+            "type": "survivor"
+        },
+        {
+            "id": "68e5e381-e5da-4f97-8810-88d7cf5778f3",
+            "name": "The Hag",
+            "type": "killer"
+        },
+        {
+            "id": "a055bfa4-6d3f-4214-8931-e4a1963c7cdf",
+            "name": "The Knight",
+            "type": "killer"
+        },
+        {
+            "id": "d0543d03-9cc4-4316-8fda-c602590d5d0e",
+            "name": "Haddie Kaur",
+            "type": "survivor"
+        },
+        {
+            "id": "814b0b67-ca0b-4ce0-8dd1-b1a5cd174400",
+            "name": "The Doctor",
+            "type": "killer"
+        }
+    ],
+    "perks": [
+        {
+            "character_id": "6ae26b96-1d3b-466b-af9d-1a564db432a4",
+            "id": "cfab445b-bb22-4d08-964d-cda9baa89f6d",
+            "name": "A Nurse's Calling",
+            "type": "killer"
+        },
+        {
+            "character_id": "d53096a3-8f2c-44bb-8e4b-d8a2034aeb09",
+            "id": "0ab279bc-85a6-41f6-8f2c-c22bd6de5575",
+            "name": "Ace in the Hole",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c1e75b84-8926-4e47-81d4-b1de0f2b06db",
+            "id": "99c2cef8-e92e-4873-a077-f6310050cf08",
+            "name": "Adrenaline",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1a80eaf1-32c2-493f-91b9-2299f5caa05b",
+            "id": "95f92153-1756-45ad-8013-dfadee000807",
+            "name": "Aftercare",
+            "type": "survivor"
+        },
+        {
+            "character_id": "20c91fbc-172f-4c30-8d49-b617dd4f6056",
+            "id": "47902145-d707-42b3-8bfc-4ab37e1277ac",
+            "name": "Agitation",
+            "type": "killer"
+        },
+        {
+            "character_id": "0806c57b-be69-4e95-90bb-0ca69e7c2850",
+            "id": "98df82c8-58c2-4027-9ef8-be1b481380a8",
+            "name": "Alert",
+            "type": "survivor"
+        },
+        {
+            "character_id": "14eec18d-2d4b-4730-b5f0-18801bcd397b",
+            "id": "7344b197-af20-4ea3-8212-6c1ca8498853",
+            "name": "Alien Instinct",
+            "type": "killer"
+        },
+        {
+            "character_id": "c8c31915-5155-4e06-9123-b7fa7d6a0291",
+            "id": "511f998a-009b-4850-8751-1fb433197274",
+            "name": "Any Means Necessary",
+            "type": "survivor"
+        },
+        {
+            "character_id": "49642657-2144-44af-a0a2-c4609cad8702",
+            "id": "e4f57eae-aa40-4d70-bda7-18ec7dde800f",
+            "name": "Appraisal",
+            "type": "survivor"
+        },
+        {
+            "character_id": "25dc74f4-81d6-47b6-8381-e5c27072b03e",
+            "id": "251d93be-032e-4159-8f40-f962bb994bec",
+            "name": "Autodidact",
+            "type": "survivor"
+        },
+        {
+            "character_id": "3161803c-5314-4201-9db2-54638ca1c0d8",
+            "id": "37971f93-b33f-443c-baa1-6a861bd538a9",
+            "name": "Awakened Awareness",
+            "type": "killer"
+        },
+        {
+            "character_id": "7c7da62a-0f8b-43d5-a58c-b6956a7549e3",
+            "id": "b4cdee89-9865-426b-9194-0224ee7a7bbd",
+            "name": "Babysitter",
+            "type": "survivor"
+        },
+        {
+            "character_id": "6cdc2e78-8a1c-4a09-ba69-6e4ce62171c5",
+            "id": "64a22152-e53c-4e65-939a-30f39cb528d9",
+            "name": "Background Player",
+            "type": "survivor"
+        },
+        {
+            "character_id": "577c3ba7-b438-4282-9902-99dcdfd22a4a",
+            "id": "e94d874a-6936-4555-93b9-6ba45cfb0564",
+            "name": "Balanced Landing",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4b0e5759-4097-4407-9d7a-16b8fa75db17",
+            "id": "50112ee0-eaa1-4210-904c-3d34405d05c8",
+            "name": "Bamboozle",
+            "type": "killer"
+        },
+        {
+            "character_id": "d844d8ae-da1a-426b-90e5-380ba27726be",
+            "id": "577c54c3-d13e-4de2-8668-3fe1f21f145d",
+            "name": "Barbecue & Chili",
+            "type": "killer"
+        },
+        {
+            "character_id": "e1eacae1-1641-42f0-a24e-7695b6e2703d",
+            "id": "17a2f715-23f5-422d-923c-092054637e91",
+            "name": "Bardic Inspiration",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1f2d58f5-bd06-4e77-8a67-78b9dd118e08",
+            "id": "ee9892da-d56c-4f98-919e-4519510fda2d",
+            "name": "Batteries Included",
+            "type": "killer"
+        },
+        {
+            "character_id": "c0d59d81-fe7c-4162-899d-3d0332e60d93",
+            "id": "3edcb0a0-6202-4c2d-8e75-7923a90f9136",
+            "name": "Beast of Prey",
+            "type": "killer"
+        },
+        {
+            "character_id": "737a81ea-704c-4071-8a4d-2159691e36e6",
+            "id": "18792e37-b3ee-47da-aeda-9cb95ac8e03b",
+            "name": "Better Than New",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cf8e9eaf-7f01-4614-8151-5f7d5ca4e6d8",
+            "id": "196a9411-9d88-42d1-abf5-5e6e28a55693",
+            "name": "Better Together",
+            "type": "survivor"
+        },
+        {
+            "character_id": "31475692-3b23-459b-9263-d93ffe27d9a1",
+            "id": "93a3ae27-301f-402f-861a-9266a28d9a2e",
+            "name": "Bite the Bullet",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "484641b6-12f3-4442-abf8-c39babd4a35e",
+            "name": "Bitter Murmur",
+            "type": "killer"
+        },
+        {
+            "character_id": "45ddff75-55bf-4d09-8837-626a654b8028",
+            "id": "5057bb86-ab9f-445d-b91b-8837cb90256f",
+            "name": "Blast Mine",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cd60e791-f20c-4819-8280-18323732c36a",
+            "id": "41679705-cb20-4fcf-8a25-a1d034dcffe4",
+            "name": "Blood Echo",
+            "type": "killer"
+        },
+        {
+            "character_id": "b80a3055-f8e1-481b-acbb-a8684c270bf3",
+            "id": "6bb5a6ca-2999-4fa6-b300-eadbffd4a8d8",
+            "name": "Blood Pact",
+            "type": "survivor"
+        },
+        {
+            "character_id": "6cdc2e78-8a1c-4a09-ba69-6e4ce62171c5",
+            "id": "9e2d7210-5415-420a-b313-e8893b92ae36",
+            "name": "Blood Rush",
+            "type": "survivor"
+        },
+        {
+            "character_id": "30d179f3-307e-4e7f-a320-063af9c922a2",
+            "id": "83ebe549-043a-4e6e-849b-47e2ddfab051",
+            "name": "Blood Warden",
+            "type": "killer"
+        },
+        {
+            "character_id": "11dd781f-65c4-406e-ad27-460afbacee44",
+            "id": "8d58e514-9317-4d84-9a6a-bd75d6772a67",
+            "name": "Bloodhound",
+            "type": "killer"
+        },
+        {
+            "character_id": "a2552416-1c5d-4a34-a204-4200e62f7375",
+            "id": "784b7acd-4025-45f6-83ea-7700b05b9bf6",
+            "name": "Boil Over",
+            "type": "survivor"
+        },
+        {
+            "character_id": "ed7de5d2-7e46-4350-bec7-c15806404c18",
+            "id": "6192cfee-3940-4e3a-a190-49647998ad11",
+            "name": "Bond",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ca38bf5-468e-4d6b-90d6-779141d133ef",
+            "id": "1be1dcd7-7cd1-4961-b61b-03fbdd398bdc",
+            "name": "Boon: Circle of Healing",
+            "type": "survivor"
+        },
+        {
+            "character_id": "41b2b4e6-c271-4892-a7e0-08720f8e43b9",
+            "id": "8cbc22b0-f13e-4658-959a-e10c32667589",
+            "name": "Boon: Dark Theory",
+            "type": "survivor"
+        },
+        {
+            "character_id": "37a65c5b-84fd-42d6-962b-9e6e952241ae",
+            "id": "4363280b-df19-437d-b418-4efbca8aa801",
+            "name": "Boon: Exponential",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cd5640db-3c85-400f-b60b-7296b193a135",
+            "id": "6a0075ce-b02c-441b-aaf5-bed20fc2de99",
+            "name": "Boon: Illumination",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ca38bf5-468e-4d6b-90d6-779141d133ef",
+            "id": "f00fb0ec-d779-429b-8f33-41470fa2f306",
+            "name": "Boon: Shadow Step",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f0a1f99b-bcd2-4c69-9d45-3e62e7c8717e",
+            "id": "0f9c6120-e1ed-4710-a5be-90cf7025774f",
+            "name": "Borrowed Time",
+            "type": "survivor"
+        },
+        {
+            "character_id": "13bf540c-252c-4d24-a59b-e63f96a8b72b",
+            "id": "55c6845b-fc58-4219-8291-530f5329e8db",
+            "name": "Botany Knowledge",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1a80eaf1-32c2-493f-91b9-2299f5caa05b",
+            "id": "388051d4-e9b5-4742-ad96-ea7d4782cfb5",
+            "name": "Breakdown",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c8c31915-5155-4e06-9123-b7fa7d6a0291",
+            "id": "26fa120f-35f0-4e95-b927-658d604c104b",
+            "name": "Breakout",
+            "type": "survivor"
+        },
+        {
+            "character_id": "20c91fbc-172f-4c30-8d49-b617dd4f6056",
+            "id": "82f72069-5bbe-4e78-9d97-50f277a92ab4",
+            "name": "Brutal Strength",
+            "type": "killer"
+        },
+        {
+            "character_id": "426e3f01-59aa-450b-95b4-43feb6ca0d56",
+            "id": "3d5124a4-1f0c-47bf-9e15-9a641850ad0c",
+            "name": "Buckle Up",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ec673d0-f1dc-441a-8962-6c2113d4e865",
+            "id": "e497a27c-77a9-4d85-8a29-02a8b9b89613",
+            "name": "Built to Last",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4cb0bb39-b372-49d9-beca-b74516664026",
+            "id": "2cc3e9a8-7e26-4671-8d4b-0a3696ea08b8",
+            "name": "Call of Brine",
+            "type": "killer"
+        },
+        {
+            "character_id": "45721f54-6eae-495a-84a5-0b446d5f5975",
+            "id": "da11b9df-bb7c-4c28-a681-966d815f366c",
+            "name": "Calm Spirit",
+            "type": "survivor"
+        },
+        {
+            "character_id": "7c7da62a-0f8b-43d5-a58c-b6956a7549e3",
+            "id": "29cdc2c6-ffad-41b5-b9c5-84db372242ba",
+            "name": "Camaraderie",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cd5640db-3c85-400f-b60b-7296b193a135",
+            "id": "fb7f1ac3-4f54-42c3-a98b-240a392bda1e",
+            "name": "Champion of Light",
+            "type": "survivor"
+        },
+        {
+            "character_id": "54a313aa-e8f1-4845-a7a9-ee411a4c2573",
+            "id": "6aff7ec3-1e03-4c91-a57a-0fe37dff48ec",
+            "name": "Chemical Trap",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ca38bf5-468e-4d6b-90d6-779141d133ef",
+            "id": "402c2b31-c32f-4eb0-ab70-f3d4414b7ec3",
+            "name": "Clairvoyance",
+            "type": "survivor"
+        },
+        {
+            "character_id": "37a65c5b-84fd-42d6-962b-9e6e952241ae",
+            "id": "97c439aa-50ca-4da2-9470-1ec443a2bc18",
+            "name": "Corrective Action",
+            "type": "survivor"
+        },
+        {
+            "character_id": "af9ce8cb-c331-4e84-ba0d-92bef359a86c",
+            "id": "11c2db86-6197-4f1f-a315-23e670003a1d",
+            "name": "Corrupt Intervention",
+            "type": "killer"
+        },
+        {
+            "character_id": "4b0e5759-4097-4407-9d7a-16b8fa75db17",
+            "id": "4955f53c-97be-4a6b-8181-597823764c84",
+            "name": "Coulrophobia",
+            "type": "killer"
+        },
+        {
+            "character_id": "45ddff75-55bf-4d09-8837-626a654b8028",
+            "id": "d78d55a8-a91d-4cf9-b7fb-c701f9f342d2",
+            "name": "Counterforce",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1858bb77-fe37-4ddf-ae77-d230efdf5de2",
+            "id": "78afad4a-1e10-4d68-9855-3a4fcce5a730",
+            "name": "Coup de Gr\u00e2ce",
+            "type": "killer"
+        },
+        {
+            "character_id": "e4c42d5b-0cc0-494c-8447-81372f5775a7",
+            "id": "ca65fb87-4ead-4a45-a9e9-29b9dcfb5f94",
+            "name": "Cruel Limits",
+            "type": "killer"
+        },
+        {
+            "character_id": "79793846-cbd2-446a-b9bc-54db1ee3a7f2",
+            "id": "e40b3bcb-bee1-4573-b63e-13af4e85ac1b",
+            "name": "Cut Loose",
+            "type": "survivor"
+        },
+        {
+            "character_id": "a2552416-1c5d-4a34-a204-4200e62f7375",
+            "id": "6e43b5d0-e292-4faa-b8d3-347dbc1f3803",
+            "name": "Dance With Me",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4e46d4ff-b5bc-4247-9bd9-a28d528fbb34",
+            "id": "87462c96-6e89-4a02-88dd-d4ab3f485144",
+            "name": "Dark Arrogance",
+            "type": "killer"
+        },
+        {
+            "character_id": "af9ce8cb-c331-4e84-ba0d-92bef359a86c",
+            "id": "4862f05a-719d-400b-b959-72f59cc3a700",
+            "name": "Dark Devotion",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "05ce71f1-6bb6-4bb4-b2f7-9a4779a13945",
+            "name": "Dark Sense",
+            "type": "survivor"
+        },
+        {
+            "character_id": "d5314e20-818e-4f25-a84c-940ba5318215",
+            "id": "cea4a3e5-cd69-4e4a-b4ae-61684a29390b",
+            "name": "Darkness Revealed",
+            "type": "killer"
+        },
+        {
+            "character_id": "cbdedd7a-f150-4589-b3ca-8cbb7adc6112",
+            "id": "f25b9d44-b0f6-431b-948c-e2dd54474529",
+            "name": "Dead Hard",
+            "type": "survivor"
+        },
+        {
+            "character_id": "e3395987-636b-4435-871c-e8f87d666721",
+            "id": "d637428b-acdc-42aa-a65d-640665368537",
+            "name": "Dead Man's Switch",
+            "type": "killer"
+        },
+        {
+            "character_id": "cd5640db-3c85-400f-b60b-7296b193a135",
+            "id": "1a434ae6-7c0a-4cdb-9270-7c4bf3c245f7",
+            "name": "Deadline",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c88c41a5-9d90-4a0e-ae96-e13a5d65092b",
+            "id": "a276accb-7934-426d-ab0c-d48a582b385a",
+            "name": "Deadlock",
+            "type": "killer"
+        },
+        {
+            "character_id": "b6365ae4-14fa-4a96-b40a-113d9aca58d8",
+            "id": "76200e31-f569-407d-8787-0e181da6b2b9",
+            "name": "Deathbound",
+            "type": "killer"
+        },
+        {
+            "character_id": "49642657-2144-44af-a0a2-c4609cad8702",
+            "id": "bff3e0ff-0347-4d1e-8560-c890ba3e86fa",
+            "name": "Deception",
+            "type": "survivor"
+        },
+        {
+            "character_id": "5c071976-e2c8-40e2-a063-71d504d3563b",
+            "id": "1547f6c7-57fb-43ec-9df2-c77619b182f0",
+            "name": "Decisive Strike",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "78159bb3-8928-4f7c-b85e-5fb9e8e7ddfe",
+            "name": "Deerstalker",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "078b36a3-0e7e-4f31-8a14-40d3bc54f101",
+            "name": "Deja Vu",
+            "type": "survivor"
+        },
+        {
+            "character_id": "25dc74f4-81d6-47b6-8381-e5c27072b03e",
+            "id": "64a1222e-df6e-4d93-a808-cacc6cb231f5",
+            "name": "Deliverance",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ec673d0-f1dc-441a-8962-6c2113d4e865",
+            "id": "4335e335-36a3-46f6-bf23-9aa155361b57",
+            "name": "Desperate Measures",
+            "type": "survivor"
+        },
+        {
+            "character_id": "db1c681a-23a3-468b-b11b-bb0651ebb444",
+            "id": "72acf927-171a-4ccf-8970-8af2bcddc800",
+            "name": "Detective's Hunch",
+            "type": "survivor"
+        },
+        {
+            "character_id": "56673659-273d-4cb1-a2eb-74503655a683",
+            "id": "31e95fc0-7d26-4157-b324-88bd63938ae3",
+            "name": "Discordance",
+            "type": "killer"
+        },
+        {
+            "character_id": "d5314e20-818e-4f25-a84c-940ba5318215",
+            "id": "216616da-4bde-4e68-99b1-fe4e13b02670",
+            "name": "Dissolution",
+            "type": "killer"
+        },
+        {
+            "character_id": "1a80eaf1-32c2-493f-91b9-2299f5caa05b",
+            "id": "bc728513-0b0e-4c2c-b560-8aa3470db01d",
+            "name": "Distortion",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "8ae3878c-17f3-429a-aea7-d7545d8dbdb5",
+            "name": "Distressing",
+            "type": "killer"
+        },
+        {
+            "character_id": "25dc74f4-81d6-47b6-8381-e5c27072b03e",
+            "id": "4abfb0f3-3b16-4e70-bece-b7d4d3fca156",
+            "name": "Diversion",
+            "type": "survivor"
+        },
+        {
+            "character_id": "7a1b9bd2-7dbc-47cb-bd77-7906ecbca1d5",
+            "id": "6d6674c8-3895-4f7d-a57f-d1ce3e676ff4",
+            "name": "Dominance",
+            "type": "killer"
+        },
+        {
+            "character_id": "a1e806bc-355c-4a8a-808a-80cd1cec9642",
+            "id": "c7159098-e114-49c7-a592-f5800a18d8a5",
+            "name": "Dragon's Grip",
+            "type": "killer"
+        },
+        {
+            "character_id": "c4054866-0c9d-493d-bd27-dacd07ef7b41",
+            "id": "2ab4a8dc-5498-4157-9483-5299fddc509f",
+            "name": "Dramaturgy",
+            "type": "survivor"
+        },
+        {
+            "character_id": "dc041250-9a07-4730-956e-dafd929de90e",
+            "id": "16a2226c-f3b9-4749-b979-1626770fcf46",
+            "name": "Dying Light",
+            "type": "killer"
+        },
+        {
+            "character_id": "41b2b4e6-c271-4892-a7e0-08720f8e43b9",
+            "id": "ff118b8c-aa7f-4047-8e36-be853ab0f4d4",
+            "name": "Empathic Connection",
+            "type": "survivor"
+        },
+        {
+            "character_id": "13bf540c-252c-4d24-a59b-e63f96a8b72b",
+            "id": "7a0122b8-7f46-498a-aa2e-51c4ae22badb",
+            "name": "Empathy",
+            "type": "survivor"
+        },
+        {
+            "character_id": "038b5012-2321-49a1-b9bb-b590a998b40e",
+            "id": "c0ac031d-1d6d-4dd5-ae61-3263dd4ebccb",
+            "name": "Enduring",
+            "type": "killer"
+        },
+        {
+            "character_id": "f6f2c95a-e8b0-4dc9-bee3-01e15f65894b",
+            "id": "35d7aeac-9ca4-48ff-9d1d-10e92e76ffb9",
+            "name": "Eruption",
+            "type": "killer"
+        },
+        {
+            "character_id": "cf6f3839-9c30-421e-8f46-43f6ceec3d1f",
+            "id": "ffe6126a-4597-4149-afe0-2b20be231cd3",
+            "name": "Exultation",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cf6f3839-9c30-421e-8f46-43f6ceec3d1f",
+            "id": "41a58129-433b-471b-ae78-ee2e045fb127",
+            "name": "Eyes of Belmont",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f24d8384-383d-4098-acf6-7e264878c6ba",
+            "id": "66923a57-fc8e-46d6-8abc-d725646247e9",
+            "name": "Fast Track",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1e28b0d9-7afb-4e19-a0c9-7d2212a89a04",
+            "id": "52ea9cb6-3f4f-44a1-8693-32c2701e12cb",
+            "name": "Finesse",
+            "type": "survivor"
+        },
+        {
+            "character_id": "30d179f3-307e-4e7f-a320-063af9c922a2",
+            "id": "93d0b4da-6f4a-4a2d-9ece-a20b602227e4",
+            "name": "Fire Up",
+            "type": "killer"
+        },
+        {
+            "character_id": "cf8e9eaf-7f01-4614-8151-5f7d5ca4e6d8",
+            "id": "855bb931-14ea-4ac4-a335-241040f6b53d",
+            "name": "Fixated",
+            "type": "survivor"
+        },
+        {
+            "character_id": "31475692-3b23-459b-9263-d93ffe27d9a1",
+            "id": "8869fcaf-4109-4c66-a654-212bcfcf18fb",
+            "name": "Flashbang",
+            "type": "survivor"
+        },
+        {
+            "character_id": "426e3f01-59aa-450b-95b4-43feb6ca0d56",
+            "id": "bb5310f1-f175-4910-8397-bd90bc05a871",
+            "name": "Flip-Flop",
+            "type": "survivor"
+        },
+        {
+            "character_id": "77c438f0-43d7-4ad5-895b-351a464946ec",
+            "id": "b4714fa0-ed73-46c1-8678-6650a43a49ab",
+            "name": "Fogwise",
+            "type": "survivor"
+        },
+        {
+            "character_id": "255f8ca3-b6d9-45c2-bef5-69f4de74b78a",
+            "id": "278c0109-5e56-4917-b1fb-93c0b56c92d9",
+            "name": "For the People",
+            "type": "survivor"
+        },
+        {
+            "character_id": "ab2fb514-8628-4c62-90ca-28ade59e4b1d",
+            "id": "f6d0c3a7-c0fd-4efe-babd-e5fea40db6aa",
+            "name": "Forced Hesitation",
+            "type": "killer"
+        },
+        {
+            "character_id": "b6365ae4-14fa-4a96-b40a-113d9aca58d8",
+            "id": "8bd0fd4b-82be-4bb1-98eb-645730761b9b",
+            "name": "Forced Penance",
+            "type": "killer"
+        },
+        {
+            "character_id": "d844d8ae-da1a-426b-90e5-380ba27726be",
+            "id": "c89d5e3e-3966-4340-ab4c-ab2cd4213a56",
+            "name": "Franklin's Demise",
+            "type": "killer"
+        },
+        {
+            "character_id": "79793846-cbd2-446a-b9bc-54db1ee3a7f2",
+            "id": "f7385823-1cb5-4715-b676-46955392874a",
+            "name": "Friendly Competition",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1f2d58f5-bd06-4e77-8a67-78b9dd118e08",
+            "id": "a27b77fd-f1b2-42c4-825d-e0fd218e49d7",
+            "name": "Friends \u2018Til the End",
+            "type": "killer"
+        },
+        {
+            "character_id": "012ce4bf-6ff7-4432-b2fd-5b3993a36fee",
+            "id": "6b252a29-a42f-43d4-86df-d1f004074d30",
+            "name": "Furtive Chase",
+            "type": "killer"
+        },
+        {
+            "character_id": "b3ee7bda-7155-4bbc-8177-ce251fce4c55",
+            "id": "2ba0b50a-af22-496a-87b8-62b251ccf6d6",
+            "name": "Game Afoot",
+            "type": "killer"
+        },
+        {
+            "character_id": "e3395987-636b-4435-871c-e8f87d666721",
+            "id": "dc237153-02d0-4503-af00-7351ec5c86fc",
+            "name": "Gearhead",
+            "type": "killer"
+        },
+        {
+            "character_id": "ab2fb514-8628-4c62-90ca-28ade59e4b1d",
+            "id": "7d2be66d-e090-4b63-9b32-1f653384a47d",
+            "name": "Genetic Limits",
+            "type": "killer"
+        },
+        {
+            "character_id": "e35afe6e-79f7-4de2-94b7-2f0fb674575f",
+            "id": "52919f10-8ee8-4be4-b37d-fbfbfe053caf",
+            "name": "Grim Embrace",
+            "type": "killer"
+        },
+        {
+            "character_id": "1e28b0d9-7afb-4e19-a0c9-7d2212a89a04",
+            "id": "5b9f1f1b-83c1-4ea2-b370-208f1b139630",
+            "name": "Hardened",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f1e1ead6-a007-4c53-b09a-60d0268d3b25",
+            "id": "c3c2f7d1-2b39-40ab-a0d3-8bc73ac81233",
+            "name": "Head On",
+            "type": "survivor"
+        },
+        {
+            "character_id": "a1e806bc-355c-4a8a-808a-80cd1cec9642",
+            "id": "469d8c23-5759-4457-baef-f2e746c42e85",
+            "name": "Hex: Blood Favor",
+            "type": "killer"
+        },
+        {
+            "character_id": "0c1aeecc-c3a2-4044-acfb-e2f36fb97c51",
+            "id": "bc9e8724-89be-41c6-ab05-9c37ca52b4e4",
+            "name": "Hex: Crowd Control",
+            "type": "killer"
+        },
+        {
+            "character_id": "68e5e381-e5da-4f97-8810-88d7cf5778f3",
+            "id": "498e8362-e3af-476a-ac2c-090ef272b075",
+            "name": "Hex: Devour Hope",
+            "type": "killer"
+        },
+        {
+            "character_id": "a055bfa4-6d3f-4214-8931-e4a1963c7cdf",
+            "id": "e589b73d-8bba-4b79-a7f5-47d7a720935c",
+            "name": "Hex: Face the Darkness",
+            "type": "killer"
+        },
+        {
+            "character_id": "2a02f79e-d771-4def-9027-4bcb2b5592cb",
+            "id": "44847712-bf87-4118-abdf-4acc9f72e20b",
+            "name": "Hex: Haunted Ground",
+            "type": "killer"
+        },
+        {
+            "character_id": "c0d59d81-fe7c-4162-899d-3d0332e60d93",
+            "id": "a75f9c18-4858-471e-9923-05331455d0a2",
+            "name": "Hex: Huntress Lullaby",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "be835cdc-766c-415e-97d4-40cea4b0d2e0",
+            "name": "Hex: No One Escapes Death",
+            "type": "killer"
+        },
+        {
+            "character_id": "e35afe6e-79f7-4de2-94b7-2f0fb674575f",
+            "id": "f7f7cfb6-2502-4066-af36-cb9a53f87960",
+            "name": "Hex: Pentimento",
+            "type": "killer"
+        },
+        {
+            "character_id": "c88c41a5-9d90-4a0e-ae96-e13a5d65092b",
+            "id": "c6e2214c-7f77-4667-b460-3489c6bf60af",
+            "name": "Hex: Plaything",
+            "type": "killer"
+        },
+        {
+            "character_id": "e3395987-636b-4435-871c-e8f87d666721",
+            "id": "381de0fb-687b-4cb4-8207-a5fa536e0382",
+            "name": "Hex: Retribution",
+            "type": "killer"
+        },
+        {
+            "character_id": "68e5e381-e5da-4f97-8810-88d7cf5778f3",
+            "id": "4f095349-015b-4b4c-9cb1-ef879eba7c2f",
+            "name": "Hex: Ruin",
+            "type": "killer"
+        },
+        {
+            "character_id": "68e5e381-e5da-4f97-8810-88d7cf5778f3",
+            "id": "44b52dfe-0ba7-4105-8b85-c095c46aeec7",
+            "name": "Hex: The Third Seal",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "6073ee8f-9bc4-4301-ba49-1e6ad93cc196",
+            "name": "Hex: Thrill of the Hunt",
+            "type": "killer"
+        },
+        {
+            "character_id": "1f2d58f5-bd06-4e77-8a67-78b9dd118e08",
+            "id": "43f608e8-fdc8-487b-a247-213fa5c05c91",
+            "name": "Hex: Two Can Play",
+            "type": "killer"
+        },
+        {
+            "character_id": "a1e806bc-355c-4a8a-808a-80cd1cec9642",
+            "id": "d980abbc-3179-4cb1-aa52-0e03afdf5d64",
+            "name": "Hex: Undying",
+            "type": "killer"
+        },
+        {
+            "character_id": "7a1b9bd2-7dbc-47cb-bd77-7906ecbca1d5",
+            "id": "e5f3df4c-b842-462e-b3ec-6d29abfe25eb",
+            "name": "Hex: Wretched Fate",
+            "type": "killer"
+        },
+        {
+            "character_id": "1858bb77-fe37-4ddf-ae77-d230efdf5de2",
+            "id": "e4e001e3-9d70-4a75-b850-a57a246877bc",
+            "name": "Hoarder",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "724b1325-61e4-46c5-812e-e57978e2eab2",
+            "name": "Hope",
+            "type": "survivor"
+        },
+        {
+            "character_id": "a055bfa4-6d3f-4214-8931-e4a1963c7cdf",
+            "id": "c04accdc-6b72-4504-bd12-b294a1ebebcd",
+            "name": "Hubris",
+            "type": "killer"
+        },
+        {
+            "character_id": "7a1b9bd2-7dbc-47cb-bd77-7906ecbca1d5",
+            "id": "51984395-36c9-4cfa-9ea9-f2a2b534cf0b",
+            "name": "Human Greed",
+            "type": "killer"
+        },
+        {
+            "character_id": "737a81ea-704c-4071-8a4d-2159691e36e6",
+            "id": "abcdae2b-5bf5-4c27-bbe2-cd1c13868f00",
+            "name": "Hyperfocus",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f6f2c95a-e8b0-4dc9-bee3-01e15f65894b",
+            "id": "2cfa2829-781c-4646-9218-d47d7fd69d40",
+            "name": "Hysteria",
+            "type": "killer"
+        },
+        {
+            "character_id": "012ce4bf-6ff7-4432-b2fd-5b3993a36fee",
+            "id": "279a3225-08e2-4529-89d9-c543d8481d88",
+            "name": "I'm All Ears",
+            "type": "killer"
+        },
+        {
+            "character_id": "af9ce8cb-c331-4e84-ba0d-92bef359a86c",
+            "id": "60842faa-76ec-4dfa-a680-87a7d3098391",
+            "name": "Infectious Fright",
+            "type": "killer"
+        },
+        {
+            "character_id": "d0543d03-9cc4-4316-8fda-c602590d5d0e",
+            "id": "ff5784f4-4381-473c-bf2b-6bc16ec5b1c1",
+            "name": "Inner Focus",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cf8e9eaf-7f01-4614-8151-5f7d5ca4e6d8",
+            "id": "6b952dca-860d-414b-b027-54ddd1001eb6",
+            "name": "Inner Strength",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "bb29804b-5b01-495d-91ff-1eb0e8ff4f02",
+            "name": "Insidious",
+            "type": "killer"
+        },
+        {
+            "character_id": "2e5f0391-7c77-446a-aa40-a579b6783deb",
+            "id": "562d4fbd-cb9c-4313-9dee-a475140e0b7b",
+            "name": "Invocation: Weaving Spiders",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "a84f2bf4-6c51-452b-8696-c1908726e6dc",
+            "name": "Iron Grasp",
+            "type": "killer"
+        },
+        {
+            "character_id": "56673659-273d-4cb1-a2eb-74503655a683",
+            "id": "11af2f74-9b2f-4f50-bedc-184cedbeef16",
+            "name": "Iron Maiden",
+            "type": "killer"
+        },
+        {
+            "character_id": "45721f54-6eae-495a-84a5-0b446d5f5975",
+            "id": "b608957a-6ac0-46a1-b1df-4a04117aaf08",
+            "name": "Iron Will",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "1ea13577-c039-4937-909a-fac5d029cebe",
+            "name": "Kindred",
+            "type": "survivor"
+        },
+        {
+            "character_id": "d844d8ae-da1a-426b-90e5-380ba27726be",
+            "id": "676644be-7550-487b-bc9a-e2a737c14eda",
+            "name": "Knock Out",
+            "type": "killer"
+        },
+        {
+            "character_id": "4e46d4ff-b5bc-4247-9bd9-a28d528fbb34",
+            "id": "72788d69-444c-4fb6-84d6-11904bc750ea",
+            "name": "Languid Touch",
+            "type": "killer"
+        },
+        {
+            "character_id": "ed7de5d2-7e46-4350-bec7-c15806404c18",
+            "id": "3d431d4f-c419-4195-b65b-b54c7b8879ae",
+            "name": "Leader",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f0a1f99b-bcd2-4c69-9d45-3e62e7c8717e",
+            "id": "959051ca-b093-48e4-a29c-1a7a61806861",
+            "name": "Left Behind",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f6f2c95a-e8b0-4dc9-bee3-01e15f65894b",
+            "id": "82d3c773-598e-487b-ada1-cc1998a7d617",
+            "name": "Lethal Pursuer",
+            "type": "killer"
+        },
+        {
+            "character_id": "b3ee7bda-7155-4bbc-8177-ce251fce4c55",
+            "id": "2b75a30c-0d12-4743-b63c-8aca999acac8",
+            "name": "Leverage",
+            "type": "killer"
+        },
+        {
+            "character_id": "54a313aa-e8f1-4845-a7a9-ee411a4c2573",
+            "id": "73acf66f-9f69-4420-b245-3bf5292b5168",
+            "name": "Light-footed",
+            "type": "survivor"
+        },
+        {
+            "character_id": "038b5012-2321-49a1-b9bb-b590a998b40e",
+            "id": "9b75f31c-bdab-4e40-820a-4894740bc1a3",
+            "name": "Lightborn",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "311dd78e-fde7-4e68-b3e5-f32015f4591a",
+            "name": "Lightweight",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0806c57b-be69-4e95-90bb-0ca69e7c2850",
+            "id": "6a95d31b-6e9f-4cdf-af86-d956245a3ef3",
+            "name": "Lithe",
+            "type": "survivor"
+        },
+        {
+            "character_id": "9d1222b5-c80e-4748-a090-882400f3d90e",
+            "id": "ebe02d3f-1d00-4b77-b9ca-f16ee54dfe13",
+            "name": "Low Profile",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c8c31915-5155-4e06-9123-b7fa7d6a0291",
+            "id": "4e280b15-a89c-49ef-b2a7-456169d247e3",
+            "name": "Lucky Break",
+            "type": "survivor"
+        },
+        {
+            "character_id": "54a313aa-e8f1-4845-a7a9-ee411a4c2573",
+            "id": "87436ebf-89a7-4578-8044-2035a03c33cf",
+            "name": "Lucky Star",
+            "type": "survivor"
+        },
+        {
+            "character_id": "ab2fb514-8628-4c62-90ca-28ade59e4b1d",
+            "id": "446bf6f4-754c-4005-b1d6-88948600dd09",
+            "name": "Machine Learning",
+            "type": "killer"
+        },
+        {
+            "character_id": "56673659-273d-4cb1-a2eb-74503655a683",
+            "id": "1863f489-bbd4-4dd0-86e4-4d67720ac583",
+            "name": "Mad Grit",
+            "type": "killer"
+        },
+        {
+            "character_id": "057ed410-a432-4132-b843-cdee7fea2d81",
+            "id": "7a40e99b-da1d-46b0-b3d1-bffdd7f8bbf8",
+            "name": "Made for This",
+            "type": "survivor"
+        },
+        {
+            "character_id": "8f780fad-ff33-4561-b36d-3b42c5e67008",
+            "id": "2160bb50-58e2-46fa-affa-911796d49ca0",
+            "name": "Make Your Choice",
+            "type": "killer"
+        },
+        {
+            "character_id": "4cb0bb39-b372-49d9-beca-b74516664026",
+            "id": "0b47f934-dce2-45e6-adb9-16cf420a5686",
+            "name": "Merciless Storm",
+            "type": "killer"
+        },
+        {
+            "character_id": "426e3f01-59aa-450b-95b4-43feb6ca0d56",
+            "id": "637d7d77-a80f-4393-8f74-c669f1d5a5ec",
+            "name": "Mettle of Man",
+            "type": "survivor"
+        },
+        {
+            "character_id": "e4c42d5b-0cc0-494c-8447-81372f5775a7",
+            "id": "9909e9c4-22fc-4e5d-ac7b-6cef5fa8a1b7",
+            "name": "Mindbreaker",
+            "type": "killer"
+        },
+        {
+            "character_id": "e1eacae1-1641-42f0-a24e-7695b6e2703d",
+            "id": "42394f77-581a-4ba6-bdcd-9abe267878f8",
+            "name": "Mirrored Illusion",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cf6f3839-9c30-421e-8f46-43f6ceec3d1f",
+            "id": "53139efb-63a8-4c3d-a606-17aaefd241e2",
+            "name": "Moment of Glory",
+            "type": "survivor"
+        },
+        {
+            "character_id": "814b0b67-ca0b-4ce0-8dd1-b1a5cd174400",
+            "id": "2a5caec0-ff86-4f87-bef1-438dc0a6a1c2",
+            "name": "Monitor & Abuse",
+            "type": "killer"
+        },
+        {
+            "character_id": "cd60e791-f20c-4819-8280-18323732c36a",
+            "id": "f5e72cfd-e06c-48bc-9763-694eeb360a68",
+            "name": "Nemesis",
+            "type": "killer"
+        },
+        {
+            "character_id": "cbdedd7a-f150-4589-b3ca-8cbb7adc6112",
+            "id": "e0841b99-3996-4c27-a98b-080dc16c874f",
+            "name": "No Mither",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "dc7e28e3-8b36-4fa7-a84e-3b382357e17f",
+            "name": "No One Left Behind",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0c1aeecc-c3a2-4044-acfb-e2f36fb97c51",
+            "id": "0c04d7fa-b7f0-4330-b011-0e5ec724986a",
+            "name": "No Way Out",
+            "type": "killer"
+        },
+        {
+            "character_id": "a055bfa4-6d3f-4214-8931-e4a1963c7cdf",
+            "id": "35571e33-ff78-435c-842b-734ac77d2082",
+            "name": "Nowhere to Hide",
+            "type": "killer"
+        },
+        {
+            "character_id": "5c071976-e2c8-40e2-a063-71d504d3563b",
+            "id": "1dcb39a9-3a94-4fa0-9ffe-49a59a6995c7",
+            "name": "Object of Obsession",
+            "type": "survivor"
+        },
+        {
+            "character_id": "255f8ca3-b6d9-45c2-bef5-69f4de74b78a",
+            "id": "fdf2520b-26a5-4e81-9905-ebac2302b55f",
+            "name": "Off the Record",
+            "type": "survivor"
+        },
+        {
+            "character_id": "d53096a3-8f2c-44bb-8e4b-d8a2034aeb09",
+            "id": "498c3388-0aed-465b-a56c-1098625bf08b",
+            "name": "Open-Handed",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1858bb77-fe37-4ddf-ae77-d230efdf5de2",
+            "id": "466cca6c-b035-4f11-ac14-326960bf4e96",
+            "name": "Oppression",
+            "type": "killer"
+        },
+        {
+            "character_id": "814b0b67-ca0b-4ce0-8dd1-b1a5cd174400",
+            "id": "00fad37d-4ebe-4626-b5e3-73c2e008486f",
+            "name": "Overcharge",
+            "type": "killer"
+        },
+        {
+            "character_id": "37a65c5b-84fd-42d6-962b-9e6e952241ae",
+            "id": "6c18883c-7a55-4bfa-a41b-4429615ceb49",
+            "name": "Overcome",
+            "type": "survivor"
+        },
+        {
+            "character_id": "814b0b67-ca0b-4ce0-8dd1-b1a5cd174400",
+            "id": "5cd957ba-2fc3-42f3-b17f-7886752a746e",
+            "name": "Overwhelming Presence",
+            "type": "killer"
+        },
+        {
+            "character_id": "d0543d03-9cc4-4316-8fda-c602590d5d0e",
+            "id": "32ba969a-2b69-4179-b0b9-071cd459bffd",
+            "name": "Overzealous",
+            "type": "survivor"
+        },
+        {
+            "character_id": "41b2b4e6-c271-4892-a7e0-08720f8e43b9",
+            "id": "f4ade952-f2de-4f1f-af7e-43069b2dcf8e",
+            "name": "Parental Guidance",
+            "type": "survivor"
+        },
+        {
+            "character_id": "fb950bf2-bf62-4e12-b295-7d03e61a32d4",
+            "id": "05e32635-5f21-47ec-bc65-97e46c6ff9a8",
+            "name": "Pharmacy",
+            "type": "survivor"
+        },
+        {
+            "character_id": "dc041250-9a07-4730-956e-dafd929de90e",
+            "id": "bd9aa61e-5d0c-4f06-bca3-4e00f35ded44",
+            "name": "Play With Your Food",
+            "type": "killer"
+        },
+        {
+            "character_id": "c4054866-0c9d-493d-bd27-dacd07ef7b41",
+            "id": "2d3aa508-456b-4316-936e-65c397faeecc",
+            "name": "Plot Twist",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "355a2da8-41a6-4522-99e4-f167519759a9",
+            "name": "Plunderer's Instinct",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f1e1ead6-a007-4c53-b09a-60d0268d3b25",
+            "id": "57bb4517-1b44-4b58-a4e3-15eb2dbb305d",
+            "name": "Poised",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4b0e5759-4097-4407-9d7a-16b8fa75db17",
+            "id": "c91251f9-8440-4148-9342-05b8852f215c",
+            "name": "Pop Goes the Weasel",
+            "type": "killer"
+        },
+        {
+            "character_id": "77c438f0-43d7-4ad5-895b-351a464946ec",
+            "id": "5f583ce3-3b40-40d7-979a-cb3e82972126",
+            "name": "Potential Energy",
+            "type": "survivor"
+        },
+        {
+            "character_id": "49642657-2144-44af-a0a2-c4609cad8702",
+            "id": "dbe10f1d-dd61-476a-8b10-78de29a3d8dc",
+            "name": "Power Struggle",
+            "type": "survivor"
+        },
+        {
+            "character_id": "11dd781f-65c4-406e-ad27-460afbacee44",
+            "id": "d9fb1646-7062-4709-b5a1-4d338dce9def",
+            "name": "Predator",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "c423505b-4531-49ef-a1a1-f942363fc5f9",
+            "name": "Premonition",
+            "type": "survivor"
+        },
+        {
+            "character_id": "ed7de5d2-7e46-4350-bec7-c15806404c18",
+            "id": "495c192b-ae36-4ec4-ab87-3376bbb98e1d",
+            "name": "Prove Thyself",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c1e75b84-8926-4e47-81d4-b1de0f2b06db",
+            "id": "8edf4d4b-fbcf-4583-861a-0c24502f649a",
+            "name": "Quick & Quiet",
+            "type": "survivor"
+        },
+        {
+            "character_id": "77c438f0-43d7-4ad5-895b-351a464946ec",
+            "id": "116b1d39-90b8-4c41-8dfa-b2d3ac0e9e35",
+            "name": "Quick Gambit",
+            "type": "survivor"
+        },
+        {
+            "character_id": "2a02f79e-d771-4def-9027-4bcb2b5592cb",
+            "id": "23daace6-5e51-4c2c-b8a5-ac617482f45e",
+            "name": "Rancor",
+            "type": "killer"
+        },
+        {
+            "character_id": "14eec18d-2d4b-4730-b5f0-18801bcd397b",
+            "id": "23f58dcb-24ca-4304-83bf-99a23f7d6229",
+            "name": "Rapid Brutality",
+            "type": "killer"
+        },
+        {
+            "character_id": "9d1222b5-c80e-4748-a090-882400f3d90e",
+            "id": "cda2fa77-ce8b-47dc-b8b0-cc8b39b1e186",
+            "name": "Reactive Healing",
+            "type": "survivor"
+        },
+        {
+            "character_id": "737a81ea-704c-4071-8a4d-2159691e36e6",
+            "id": "29f1a90b-a5b9-46cf-af5b-d5e4d3ce0293",
+            "name": "Reassurance",
+            "type": "survivor"
+        },
+        {
+            "character_id": "255f8ca3-b6d9-45c2-bef5-69f4de74b78a",
+            "id": "bd9f4024-cbea-41e1-a1ce-8753b724b38d",
+            "name": "Red Herring",
+            "type": "survivor"
+        },
+        {
+            "character_id": "30d179f3-307e-4e7f-a320-063af9c922a2",
+            "id": "eee64205-391a-4153-b231-482602930b9a",
+            "name": "Remember Me",
+            "type": "killer"
+        },
+        {
+            "character_id": "b80a3055-f8e1-481b-acbb-a8684c270bf3",
+            "id": "9871a38d-0265-4066-bfc0-6e5da87a8c6f",
+            "name": "Repressed Alliance",
+            "type": "survivor"
+        },
+        {
+            "character_id": "d0543d03-9cc4-4316-8fda-c602590d5d0e",
+            "id": "b5dc04a1-bf27-467b-a5cd-2c3464ee20a7",
+            "name": "Residual Manifest",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "f763e621-f001-4542-9e7d-a3148add6ddf",
+            "name": "Resilience",
+            "type": "survivor"
+        },
+        {
+            "character_id": "45ddff75-55bf-4d09-8837-626a654b8028",
+            "id": "a87d7de0-072a-4b7e-b78a-8940cea6e815",
+            "name": "Resurgence",
+            "type": "survivor"
+        },
+        {
+            "character_id": "31475692-3b23-459b-9263-d93ffe27d9a1",
+            "id": "12a04c47-2976-4cf9-ac6c-53c8f0a1101f",
+            "name": "Rookie Spirit",
+            "type": "survivor"
+        },
+        {
+            "character_id": "45721f54-6eae-495a-84a5-0b446d5f5975",
+            "id": "d23f679c-efd8-4657-975c-2432f5e3b9fa",
+            "name": "Saboteur",
+            "type": "survivor"
+        },
+        {
+            "character_id": "dc041250-9a07-4730-956e-dafd929de90e",
+            "id": "d9c7ad26-d4f3-4c3c-93d4-bdbf4c6bee7a",
+            "name": "Save the Best for Last",
+            "type": "killer"
+        },
+        {
+            "character_id": "057ed410-a432-4132-b843-cdee7fea2d81",
+            "id": "67489546-5033-40ea-ac2a-a1a54cce9481",
+            "name": "Scavenger",
+            "type": "survivor"
+        },
+        {
+            "character_id": "c4054866-0c9d-493d-bd27-dacd07ef7b41",
+            "id": "96e0898e-1980-466a-8e5a-1ef9cd566188",
+            "name": "Scene Partner",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4cb0bb39-b372-49d9-beca-b74516664026",
+            "id": "c9c49432-aea1-49e7-86d3-8c565b49f56e",
+            "name": "Scourge Hook: Floods of Rage",
+            "type": "killer"
+        },
+        {
+            "character_id": "c88c41a5-9d90-4a0e-ae96-e13a5d65092b",
+            "id": "c34267be-8762-4188-8672-41c283926061",
+            "name": "Scourge Hook: Gift of Pain",
+            "type": "killer"
+        },
+        {
+            "character_id": "8f780fad-ff33-4561-b36d-3b42c5e67008",
+            "id": "7dc6954c-15a7-4a87-8ecc-f4c4d6a3603c",
+            "name": "Scourge Hook: Hangman's Trick",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "b4cb6318-0bad-4ae2-b4bf-de2346f7f17f",
+            "name": "Scourge Hook: Monstrous Shrine",
+            "type": "killer"
+        },
+        {
+            "character_id": "e35afe6e-79f7-4de2-94b7-2f0fb674575f",
+            "id": "c4caae0b-eea1-42e8-8bb0-93ad5e6e728b",
+            "name": "Scourge Hook: Pain Resonance",
+            "type": "killer"
+        },
+        {
+            "character_id": "7c7da62a-0f8b-43d5-a58c-b6956a7549e3",
+            "id": "54edb310-8b1f-4de9-ab2b-73793fa96ab5",
+            "name": "Second Wind",
+            "type": "survivor"
+        },
+        {
+            "character_id": "13bf540c-252c-4d24-a59b-e63f96a8b72b",
+            "id": "cf2dfdf3-953e-4636-9463-79a4bca856e1",
+            "name": "Self-Care",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f24d8384-383d-4098-acf6-7e264878c6ba",
+            "id": "781a5c87-38a2-4f1c-8305-caa7d69a2b9e",
+            "name": "Self-Preservation",
+            "type": "survivor"
+        },
+        {
+            "character_id": "d5314e20-818e-4f25-a84c-940ba5318215",
+            "id": "af08eea6-4400-4477-a8d0-86e0f37a91db",
+            "name": "Septic Touch",
+            "type": "killer"
+        },
+        {
+            "character_id": "11dd781f-65c4-406e-ad27-460afbacee44",
+            "id": "18a94995-6525-480e-88fe-976548f399c4",
+            "name": "Shadowborn",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "29653bf0-570e-4922-bc23-33c287427a77",
+            "name": "Shattered Hope",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "b596c2a0-3b1c-408e-9d45-61cf80f208ca",
+            "name": "Slippery Meat",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "d24c9bec-052d-4b6b-8c3e-f231a81c24a1",
+            "name": "Sloppy Butcher",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "88ad8d6c-99e4-4658-9835-700b5586ed23",
+            "name": "Small Game",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f24d8384-383d-4098-acf6-7e264878c6ba",
+            "id": "9c2241b9-fec3-4ff2-96c6-bea844f64a64",
+            "name": "Smash Hit",
+            "type": "survivor"
+        },
+        {
+            "character_id": "5c071976-e2c8-40e2-a063-71d504d3563b",
+            "id": "72a4209a-04ba-45a9-a6ee-81290308d2ea",
+            "name": "Sole Survivor",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f1e1ead6-a007-4c53-b09a-60d0268d3b25",
+            "id": "0ac33bfb-e45e-4838-a903-6d0e63498a2c",
+            "name": "Solidarity",
+            "type": "survivor"
+        },
+        {
+            "character_id": "b80a3055-f8e1-481b-acbb-a8684c270bf3",
+            "id": "cedfbf63-c101-42a9-9538-083ed9a6e504",
+            "name": "Soul Guard",
+            "type": "survivor"
+        },
+        {
+            "character_id": "1e28b0d9-7afb-4e19-a0c9-7d2212a89a04",
+            "id": "b94f7e9c-22ec-4fad-9c6f-bb9bbdebef2a",
+            "name": "Specialist",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "5ac5250d-420f-4cab-8867-2b6c576f87bd",
+            "name": "Spies from the Shadows",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "b85c6354-e35c-4731-a33a-2a56d903c812",
+            "name": "Spine Chill",
+            "type": "survivor"
+        },
+        {
+            "character_id": "2a02f79e-d771-4def-9027-4bcb2b5592cb",
+            "id": "108ad134-904e-4c29-a164-cdba7df2d891",
+            "name": "Spirit Fury",
+            "type": "killer"
+        },
+        {
+            "character_id": "c1e75b84-8926-4e47-81d4-b1de0f2b06db",
+            "id": "fe43e018-b11c-449a-bacd-a65d6f64c466",
+            "name": "Sprint Burst",
+            "type": "survivor"
+        },
+        {
+            "character_id": "db1c681a-23a3-468b-b11b-bb0651ebb444",
+            "id": "bc842591-2300-44a2-b98f-414ccb3daa62",
+            "name": "Stake Out",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0c1aeecc-c3a2-4044-acfb-e2f36fb97c51",
+            "id": "d5849b1c-bd2a-4d26-929e-73c0e9e96005",
+            "name": "Starstruck",
+            "type": "killer"
+        },
+        {
+            "character_id": "e1eacae1-1641-42f0-a24e-7695b6e2703d",
+            "id": "5f9b8f87-80aa-4fe9-b856-a8b04d6ad715",
+            "name": "Still Sight",
+            "type": "survivor"
+        },
+        {
+            "character_id": "577c3ba7-b438-4282-9902-99dcdfd22a4a",
+            "id": "c2d0f283-aec0-47f9-b8be-33b339dfae38",
+            "name": "Streetwise",
+            "type": "survivor"
+        },
+        {
+            "character_id": "2e5f0391-7c77-446a-aa40-a579b6783deb",
+            "id": "52113297-9ee0-47a7-9fb4-faa490993d16",
+            "name": "Strength in Shadows",
+            "type": "survivor"
+        },
+        {
+            "character_id": "6ae26b96-1d3b-466b-af9d-1a564db432a4",
+            "id": "efb24ca8-6e46-400d-9325-60f0edecde15",
+            "name": "Stridor",
+            "type": "killer"
+        },
+        {
+            "character_id": "3161803c-5314-4201-9db2-54638ca1c0d8",
+            "id": "e52a2b7b-18f8-4b7b-b9de-54626efc6b6c",
+            "name": "Superior Anatomy",
+            "type": "killer"
+        },
+        {
+            "character_id": "e4c42d5b-0cc0-494c-8447-81372f5775a7",
+            "id": "7eb86771-8f78-4e11-9ef9-3f537141b847",
+            "name": "Surge",
+            "type": "killer"
+        },
+        {
+            "character_id": "8f780fad-ff33-4561-b36d-3b42c5e67008",
+            "id": "b69904f1-1ec6-4051-959e-d7e434bcd532",
+            "name": "Surveillance",
+            "type": "killer"
+        },
+        {
+            "character_id": "6cdc2e78-8a1c-4a09-ba69-6e4ce62171c5",
+            "id": "da0beeae-2391-4821-802a-236d3291bc09",
+            "name": "Teamwork: Collective Stealth",
+            "type": "survivor"
+        },
+        {
+            "character_id": "79793846-cbd2-446a-b9bc-54db1ee3a7f2",
+            "id": "680b3f94-70e8-40dc-8e51-b7eb39d29ee3",
+            "name": "Teamwork: Power of Two",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0806c57b-be69-4e95-90bb-0ca69e7c2850",
+            "id": "3a69bdb1-f925-4935-b125-10da091eb1c0",
+            "name": "Technician",
+            "type": "survivor"
+        },
+        {
+            "character_id": "db1c681a-23a3-468b-b11b-bb0651ebb444",
+            "id": "18665e91-d3ae-49bf-9bd8-b47f157213dd",
+            "name": "Tenacity",
+            "type": "survivor"
+        },
+        {
+            "character_id": "3161803c-5314-4201-9db2-54638ca1c0d8",
+            "id": "1fa3f043-f1ca-45cc-aa4a-83ccb768ca9f",
+            "name": "Terminus",
+            "type": "killer"
+        },
+        {
+            "character_id": "c0d59d81-fe7c-4162-899d-3d0332e60d93",
+            "id": "b480563f-d171-4927-9cc5-21c5d3637a3a",
+            "name": "Territorial Imperative",
+            "type": "killer"
+        },
+        {
+            "character_id": "6ae26b96-1d3b-466b-af9d-1a564db432a4",
+            "id": "b53bd9b0-ea4c-4a5e-8c15-4949a656e9d3",
+            "name": "Thanatophobia",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "a9324b2c-1578-486b-ad3c-d5dd9ce32827",
+            "name": "This Is Not Happening",
+            "type": "survivor"
+        },
+        {
+            "character_id": "012ce4bf-6ff7-4432-b2fd-5b3993a36fee",
+            "id": "2536e965-c1d6-4841-8f76-c2f583e78bde",
+            "name": "Thrilling Tremors",
+            "type": "killer"
+        },
+        {
+            "character_id": "b3ee7bda-7155-4bbc-8177-ce251fce4c55",
+            "id": "8c9b5466-c826-45e8-8b92-d90ab08b221e",
+            "name": "THWACK!",
+            "type": "killer"
+        },
+        {
+            "character_id": "038b5012-2321-49a1-b9bb-b590a998b40e",
+            "id": "095670c0-c7d0-48e9-9487-d882716b88f7",
+            "name": "Tinkerer",
+            "type": "killer"
+        },
+        {
+            "character_id": "b6365ae4-14fa-4a96-b40a-113d9aca58d8",
+            "id": "e95c9226-a107-4374-a384-7e539562a85e",
+            "name": "Trail of Torment",
+            "type": "killer"
+        },
+        {
+            "character_id": "057ed410-a432-4132-b843-cdee7fea2d81",
+            "id": "4f39b050-924f-45bd-b0ca-e8947eaf7b34",
+            "name": "Troubleshooter",
+            "type": "survivor"
+        },
+        {
+            "character_id": "14eec18d-2d4b-4730-b5f0-18801bcd397b",
+            "id": "e883e37f-5f1b-4947-a677-9f92166f1197",
+            "name": "Ultimate Weapon",
+            "type": "killer"
+        },
+        {
+            "character_id": "f91cbd8e-78f3-4cee-9c8f-a3e4e8541037",
+            "id": "04de9daa-b5ef-4761-b485-3a11bbd10435",
+            "name": "Unbound",
+            "type": "killer"
+        },
+        {
+            "character_id": "f0a1f99b-bcd2-4c69-9d45-3e62e7c8717e",
+            "id": "41523502-5f43-441c-871f-152e74b8b9b4",
+            "name": "Unbreakable",
+            "type": "survivor"
+        },
+        {
+            "character_id": "f91cbd8e-78f3-4cee-9c8f-a3e4e8541037",
+            "id": "f56f5815-f1f5-4187-954a-9581b7b925d0",
+            "name": "Undone",
+            "type": "killer"
+        },
+        {
+            "character_id": "f91cbd8e-78f3-4cee-9c8f-a3e4e8541037",
+            "id": "53a3f257-6cc3-44f5-b939-0a287169eb24",
+            "name": "Unforeseen",
+            "type": "killer"
+        },
+        {
+            "character_id": "20c91fbc-172f-4c30-8d49-b617dd4f6056",
+            "id": "4966e664-17d6-4ef1-b8cb-b9f150cd4621",
+            "name": "Unnerving Presence",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "864158e1-9d0b-4df0-8e14-9b09f7c73333",
+            "name": "Unrelenting",
+            "type": "killer"
+        },
+        {
+            "character_id": "d53096a3-8f2c-44bb-8e4b-d8a2034aeb09",
+            "id": "d46cd5ae-f99d-4c10-81aa-3e3539cfffcc",
+            "name": "Up the Ante",
+            "type": "survivor"
+        },
+        {
+            "character_id": "577c3ba7-b438-4282-9902-99dcdfd22a4a",
+            "id": "6ae16c89-356f-4014-9e61-809d463035a1",
+            "name": "Urban Evasion",
+            "type": "survivor"
+        },
+        {
+            "character_id": "fb950bf2-bf62-4e12-b295-7d03e61a32d4",
+            "id": "f93dd642-f0ad-40a5-9b32-1e1111887408",
+            "name": "Vigil",
+            "type": "survivor"
+        },
+        {
+            "character_id": "0ec673d0-f1dc-441a-8962-6c2113d4e865",
+            "id": "7c26e144-7ca1-4d5e-9b51-28df335de45e",
+            "name": "Visionary",
+            "type": "survivor"
+        },
+        {
+            "character_id": "fb950bf2-bf62-4e12-b295-7d03e61a32d4",
+            "id": "85c28e4e-53db-4130-a7d5-f96a34fc8ef2",
+            "name": "Wake Up!",
+            "type": "survivor"
+        },
+        {
+            "character_id": null,
+            "id": "a6242ad3-60e7-4ad9-8d23-49f7fc46e136",
+            "name": "We'll Make It",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cbdedd7a-f150-4589-b3ca-8cbb7adc6112",
+            "id": "5bb08169-ceb3-4183-ba4e-5eece091c0de",
+            "name": "We're Gonna Live Forever",
+            "type": "survivor"
+        },
+        {
+            "character_id": "4e46d4ff-b5bc-4247-9bd9-a28d528fbb34",
+            "id": "dfd3de39-2337-4d1c-a898-48836b03c3c7",
+            "name": "Weave Attunement",
+            "type": "killer"
+        },
+        {
+            "character_id": null,
+            "id": "6b14c154-f48c-4923-ad67-a0683db7fc47",
+            "name": "Whispers",
+            "type": "killer"
+        },
+        {
+            "character_id": "2e5f0391-7c77-446a-aa40-a579b6783deb",
+            "id": "bd9b2c79-d69d-4a08-9b45-13ab4a80d209",
+            "name": "Wicked",
+            "type": "survivor"
+        },
+        {
+            "character_id": "a2552416-1c5d-4a34-a204-4200e62f7375",
+            "id": "d3831cc2-0bf2-4152-b8e1-085179e8d7fc",
+            "name": "Windows of Opportunity",
+            "type": "survivor"
+        },
+        {
+            "character_id": "9d1222b5-c80e-4748-a090-882400f3d90e",
+            "id": "22490ea8-cfd3-42dc-8119-3fff934eb8c7",
+            "name": "Wiretap",
+            "type": "survivor"
+        },
+        {
+            "character_id": "cd60e791-f20c-4819-8280-18323732c36a",
+            "id": "a8d80d80-432a-4a7a-9442-528ab2a33ff5",
+            "name": "Zanshin Tactics",
+            "type": "killer"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+.playerArea {
+    display: block;
+}
+
+.playerInput {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.playerInput input {
+    margin: 0;
+    padding: 1rem;
+}
+
+.result h4 {
+    text-align: center;
+}
+
+.randomize {
+    display: flex;
+    justify-content: center;
+}
