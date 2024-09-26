@@ -1,12 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   ChangeEvent,
-  Dispatch,
   FC,
   FormEvent,
   Fragment,
   MouseEvent,
-  SetStateAction,
   useCallback,
   useRef,
   useState,
@@ -22,9 +19,26 @@ CHARACTERS.sort();
 const PERKS = DATA.perks;
 PERKS.sort();
 
-const SURVIVOR_CHARACTERS = CHARACTERS.filter(c => c.type === "survivor");
+const CHARACTER_PERKS_MAP = PERKS.reduce<{ [id: string]: string[] }>(
+  (map, perk) => {
+    if (!perk.characterId) {
+      return map;
+    }
 
-const SURVIVOR_PERKS = PERKS.filter(p => p.type === "survivor");
+    if (!map[perk.characterId]) {
+      map[perk.characterId] = [];
+    }
+
+    map[perk.characterId].push(perk.id);
+
+    return map;
+  },
+  {}
+);
+
+const SURVIVOR_CHARACTERS = CHARACTERS.filter((c) => c.type === "survivor");
+
+const SURVIVOR_PERKS = PERKS.filter((p) => p.type === "survivor");
 
 function shuffle<T>(items: T[]): T[] {
   const itemIndexes = items.map((_, i) => i);
@@ -47,11 +61,6 @@ function pick<T>(amount: number, items: T[]): T[] {
 
   return shuffle(items).slice(0, 4);
 }
-
-type Perk = {
-  id: string;
-  name: string;
-};
 
 type Player = {
   availableCharacters: string[];
@@ -79,6 +88,7 @@ const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
   const [availableCharacters, setAvailableCharacters] = useState(
     player.availableCharacters
   );
+  const [availablePerks, setAvailablePerks] = useState(player.availablePerks);
   const [name, setName] = useState(player.name);
 
   const handleCancel = useCallback(
@@ -120,16 +130,42 @@ const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
     [setName]
   );
 
+  const handlePerkSelect = useCallback(
+    (id: string) => (_: ChangeEvent<HTMLInputElement>) => {
+      setAvailablePerks((a) => {
+        if (a.includes(id)) {
+          return a.filter((c) => c !== id);
+        }
+
+        return [...a, id];
+      });
+    },
+    [setAvailablePerks]
+  );
+
+  const handlePerkSelectAll = useCallback(
+    (_: ChangeEvent<HTMLInputElement>) => {
+      setAvailablePerks((a) => {
+        if (a.length === SURVIVOR_PERKS.length) return [];
+
+        return SURVIVOR_PERKS.map((c) => c.id);
+      });
+    },
+    [setAvailablePerks]
+  );
+
   const handleSubmit = useCallback(
     (ev: FormEvent<HTMLFormElement>) => {
       ev.preventDefault();
 
       onSubmit({
         ...player,
+        availableCharacters,
+        availablePerks,
         name,
       });
     },
-    [name, onSubmit, player]
+    [availableCharacters, availablePerks, name, onSubmit, player]
   );
 
   return (
@@ -138,19 +174,20 @@ const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
       <p>Do stuff</p>
       <label>Name</label>
       <input onChange={handleNameChange} value={name} />
-      <label>Available Characters</label>
-      <p>
-        <input
-          checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
-          id="character-all"
-          name="character-all"
-          onChange={handleCharacterSelectAll}
-          type="checkbox"
-        />
-        <label htmlFor="character-all">Select all</label>
-      </p>
-      <p>
-        {SURVIVOR_CHARACTERS.map((character) => (
+      <details>
+        <summary>Available Characters</summary>
+        <p>
+          <input
+            checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
+            id="character-all"
+            name="character-all"
+            onChange={handleCharacterSelectAll}
+            type="checkbox"
+          />
+          <label htmlFor="character-all">Select all</label>
+        </p>
+        <p>
+          {SURVIVOR_CHARACTERS.map((character) => (
             <Fragment key={character.id}>
               <input
                 checked={availableCharacters.includes(character.id)}
@@ -164,35 +201,35 @@ const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
               </label>
             </Fragment>
           ))}
-      </p>
-
-      <label>Available Perks</label>
-      <p>
-        <input
-          checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
-          id="perk-all"
-          name="perk-all"
-          onChange={handleCharacterSelectAll}
-          type="checkbox"
-        />
-        <label htmlFor="perk-all">Select all</label>
-      </p>
-      <p>
-        {SURVIVOR_PERKS.map((perk) => (
+        </p>
+      </details>
+      <details>
+        <summary>Available Perks (e.g. Secret Shrine perks)</summary>
+        <p>
+          <input
+            checked={availablePerks.length === SURVIVOR_PERKS.length}
+            id="perk-all"
+            name="perk-all"
+            onChange={handlePerkSelectAll}
+            type="checkbox"
+          />
+          <label htmlFor="perk-all">Select all</label>
+        </p>
+        <p>
+          {SURVIVOR_PERKS.map((perk) => (
             <Fragment key={perk.id}>
               <input
                 checked={availableCharacters.includes(perk.id)}
                 id={`perk-${perk.id}`}
                 name={`perk-${perk.id}`}
-                onChange={handleCharacterSelect(perk.id)}
+                onChange={handlePerkSelect(perk.id)}
                 type="checkbox"
               />
-              <label htmlFor={`perk-${perk.id}`}>
-                {perk.name}
-              </label>
+              <label htmlFor={`perk-${perk.id}`}>{perk.name}</label>
             </Fragment>
           ))}
-      </p>
+        </p>
+      </details>
       <button role="submit">Submit</button>
       <button onClick={handleCancel}>Cancel</button>
     </form>
@@ -202,11 +239,18 @@ const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
 export const App: FC = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
-  const [arePerksPooled, setPerksPooled] = useState(false);
+  const [isAvoidingOverlapping, setAvoidingOverlapping] = useState(false);
   const [editPlayerState, setEditPlayerState] = useState<string | null>(null);
   const [newPlayerName, setNewPlayerName] = useState("");
   const [players, setPlayers] = useState<Player[]>([]);
   const [randomizedPerks, setRandomizedPerks] = useState<RandomizedPerks>({});
+
+  const handleAvoidOverlappingChange = useCallback(
+    (_: ChangeEvent<HTMLInputElement>) => {
+      setAvoidingOverlapping((p) => !p);
+    },
+    [setAvoidingOverlapping]
+  );
 
   const handleNewPlayerNameChange = useCallback(
     (ev: ChangeEvent<HTMLInputElement>) => {
@@ -277,46 +321,47 @@ export const App: FC = () => {
     [dialogRef, setEditPlayerState, setPlayers]
   );
 
-  const handlePerksPooledChange = useCallback(
-    (_: ChangeEvent<HTMLInputElement>) => {
-      setPerksPooled((p) => !p);
-    },
-    [setPerksPooled]
-  );
-
   const handleRandomize = useCallback(
     (ev: MouseEvent<HTMLButtonElement>) => {
       ev.preventDefault();
 
-      const randomizingPlayers = players.filter(
-        ({ isRandomizing }) => isRandomizing
-      );
       const randomizedPerks: RandomizedPerks = {};
 
-      if (arePerksPooled) {
-        const selectedPerks = pick(
-          4 * randomizingPlayers.length,
-          SURVIVOR_PERKS
-        ).map((perk) => perk.id);
+      const usedPerks = [];
 
-        randomizingPlayers.forEach((player, i) => {
-          const perks = [];
+      for (const player of players) {
+        if (!player.isRandomizing) continue;
 
-          for (const perkIndex of [0, 1, 2, 3]) {
-            perks.push(selectedPerks[perkIndex + 4 * i]);
+        const availablePerkIds = new Set(player.availablePerks);
+
+        for (const charactedId of player.availableCharacters) {
+          for (const characterPerkId of CHARACTER_PERKS_MAP[charactedId]) {
+            availablePerkIds.add(characterPerkId);
           }
-
-          randomizedPerks[player.id] = perks;
-        });
-      } else {
-        for (const { id } of randomizingPlayers) {
-          randomizedPerks[id] = pick(4, SURVIVOR_PERKS).map((perk) => perk.id);
         }
+
+        // Remove used perks if avoiding overlapping
+        if (isAvoidingOverlapping) {
+          for (const usedPerkId of usedPerks) {
+            availablePerkIds.delete(usedPerkId);
+          }
+        }
+
+        const pickedPerkIds = pick(4, Array.from(availablePerkIds.values()));
+
+        // Add perks to used perks if avoiding overlapping
+        if (isAvoidingOverlapping) {
+          for (const pickedPerkId of pickedPerkIds) {
+            usedPerks.push(pickedPerkId);
+          }
+        }
+
+        randomizedPerks[player.id] = pickedPerkIds;
       }
 
       setRandomizedPerks(randomizedPerks);
     },
-    [arePerksPooled, players, setRandomizedPerks]
+    [isAvoidingOverlapping, players, setRandomizedPerks]
   );
 
   const handleRandomizingPlayerToggle = useCallback(
@@ -390,13 +435,15 @@ export const App: FC = () => {
               </ul>
             )}
             <input
-              checked={arePerksPooled}
-              id="pool-input"
-              name="pool-input"
-              onChange={handlePerksPooledChange}
+              checked={isAvoidingOverlapping}
+              id="avoid-overlapping-input"
+              name="avoid-overlapping-input"
+              onChange={handleAvoidOverlappingChange}
               type="checkbox"
             />
-            <label htmlFor="pool-input">Pool talents?</label>
+            <label htmlFor="avoid-overlapping-input">
+              Avoid overlapping perks?
+            </label>
           </form>
         </section>
         <section>

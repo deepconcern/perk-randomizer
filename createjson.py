@@ -61,7 +61,7 @@ def parse_page(file: Path, perk_list: list, character_list: list) -> None:
 
         perk_list.append(
             {
-                "character_id": character_id,
+                "characterId": character_id,
                 "id": id,
                 "name": row.find("a").text,
                 "type": perk_type,
@@ -84,6 +84,7 @@ def main() -> None:
 
         parse_page(SOURCE_DIR / file, perk_list, character_list)
 
+    character_list.sort(key=lambda c: str.casefold(c["name"]))
     perk_list.sort(key=lambda p: str.casefold(p["name"]))
 
     with open(TARGET, "w") as f:
