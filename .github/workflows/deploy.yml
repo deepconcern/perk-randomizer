@@ -30,7 +30,7 @@ jobs:
           path: "dist"
       - id: deployment
         name: Deploy to GitHub Pages
-        uses: actions/deplay-pages@
+        uses: actions/deplay-pages@v4
 
 on:
   push:
