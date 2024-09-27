@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+concurrency:
+  cancel-in-progress: false
+  group: "deploy"
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    name: "Deploy assets to GitHub Pages"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Build application
+        run: bun run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist"
+      - id: deployment
+        name: Deploy to GitHub Pages
+        uses: actions/deplay-pages@
+
+on:
+  push:
+    branches: [$default-branch]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
