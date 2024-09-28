@@ -115,7 +115,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
       <label>Name</label>
       <input onChange={handleNameChange} value={name} />
       <details>
-        <summary>Available Characters</summary>
+        <summary>Available Perks by Character</summary>
         <p>
           <input
             checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
@@ -144,7 +144,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
         </p>
       </details>
       <details>
-        <summary>Available Perks (e.g. Secret Shrine perks)</summary>
+        <summary>Available Perks (Individually selected)</summary>
         <p>
           <input
             checked={availablePerks.length === SURVIVOR_PERKS.length}

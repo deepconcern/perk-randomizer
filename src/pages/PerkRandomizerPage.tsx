@@ -14,6 +14,8 @@ import styles from "./PerkRandomizerPage.module.css";
 import { usePlayers } from "../contexts/player";
 import { Randomizer } from "../components/Randomizer";
 
+const MIN_PLAYER_NAME_LENGTH = 3;
+
 export const PerkRandomizerPage: FC = () => {
   const {
     addRandomizingPlayerId,
@@ -100,7 +102,7 @@ export const PerkRandomizerPage: FC = () => {
 
   return (
     <>
-      <dialog ref={dialogRef}>
+      <dialog className={styles.dialog} ref={dialogRef}>
         {editPlayerState && (
           <EditPlayerDialog
             onClose={handlePlayerEditClose}
@@ -116,11 +118,17 @@ export const PerkRandomizerPage: FC = () => {
           <label>Players</label>
           <div className={styles.playerInput}>
             <input
+              minLength={MIN_PLAYER_NAME_LENGTH}
               onChange={handleNewPlayerNameChange}
               placeholder="Add new player..."
               value={newPlayerName}
             />
-            <button onClick={handleNewPlayerSubmit}>Create Player</button>
+            <button
+              disabled={newPlayerName.length < MIN_PLAYER_NAME_LENGTH}
+              onClick={handleNewPlayerSubmit}
+            >
+              Create Player
+            </button>
           </div>
           {players.length === 0 ? (
             <p>Add some players</p>
