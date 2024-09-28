@@ -9,7 +9,7 @@ from uuid import uuid4
 SOURCE_DIR = Path("perklist")
 SURVIVOR_PERK_REGEX = compile(r"^Survivor - (?P<perk_character>.*)$")
 KILLER_PERK_REGEX = compile(r"^Killer - (?P<perk_character>.*)$")
-TARGET = Path("src", "data.json")
+TARGET = Path("src", "lib", "data.json")
 
 
 def parse_page(file: Path, perk_list: list, character_list: list) -> None:

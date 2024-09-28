@@ -12,12 +12,3 @@
     margin: 0;
     padding: 1rem;
 }
-
-.result h4 {
-    text-align: center;
-}
-
-.randomize {
-    display: flex;
-    justify-content: center;
-}

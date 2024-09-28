@@ -1,0 +1,8 @@
+.result h4 {
+    text-align: center;
+}
+
+.randomize {
+    display: flex;
+    justify-content: center;
+}
