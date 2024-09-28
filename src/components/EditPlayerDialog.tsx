@@ -5,11 +5,12 @@ import {
   Fragment,
   MouseEvent,
   useCallback,
+  useMemo,
   useState,
 } from "react";
 
-import { usePlayers } from "../contexts/player";
-import { SURVIVOR_CHARACTERS, SURVIVOR_PERKS } from "../lib/data";
+import { usePlayers } from "../hooks/usePlayers";
+import { CHARACTER_PERKS_MAP, SURVIVOR_CHARACTERS, SURVIVOR_PERKS } from "../lib/data";
 
 export type EditPlayerDialogProps = {
   onClose: () => void;
@@ -24,11 +25,29 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
 
   const player = playerMap[playerId];
 
-  const [availableCharacters, setAvailableCharacters] = useState(
-    player.availableCharacters
-  );
-  const [availablePerks, setAvailablePerks] = useState(player.availablePerks);
+  const [availablePerkIds, setAvailablePerkIds] = useState(player.availablePerkIds);
   const [name, setName] = useState(player.name);
+
+  const selectedCharacterIds = useMemo(() => {
+    const selectedCharacterIds = [];
+
+    for (const characterId of Object.keys(CHARACTER_PERKS_MAP)) {
+      let hasCharacter = true;
+
+      for (const characterPerkId of CHARACTER_PERKS_MAP[characterId]) {
+        if (!availablePerkIds.includes(characterPerkId)) {
+          hasCharacter = false;
+          break;
+        }
+      }
+
+      if (hasCharacter) {
+        selectedCharacterIds.push(characterId);
+      }
+    }
+
+    return selectedCharacterIds;
+  }, [availablePerkIds]);
 
   const handleCancel = useCallback(
     (ev: MouseEvent<HTMLButtonElement>) => {
@@ -40,26 +59,40 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
 
   const handleCharacterSelect = useCallback(
     (id: string) => (_: ChangeEvent<HTMLInputElement>) => {
-      setAvailableCharacters((a) => {
-        if (a.includes(id)) {
-          return a.filter((c) => c !== id);
-        }
-
-        return [...a, id];
-      });
+      if (selectedCharacterIds.includes(id)) {
+        setAvailablePerkIds(availablePerkIds => availablePerkIds.filter(a => !CHARACTER_PERKS_MAP[id].includes(a)));
+      } else {
+        setAvailablePerkIds(a => [...a, ...CHARACTER_PERKS_MAP[id]]);
+      }
     },
-    [setAvailableCharacters]
+    [selectedCharacterIds, setAvailablePerkIds]
   );
 
   const handleCharacterSelectAll = useCallback(
     (_: ChangeEvent<HTMLInputElement>) => {
-      setAvailableCharacters((a) => {
-        if (a.length === SURVIVOR_CHARACTERS.length) return [];
+      setAvailablePerkIds(availablePerkIds => {
+        const updatedAvailablePerkIds = [...availablePerkIds];
 
-        return SURVIVOR_CHARACTERS.map((c) => c.id);
+        if (selectedCharacterIds.length !== SURVIVOR_CHARACTERS.length) {
+          for (const character of SURVIVOR_CHARACTERS) {
+            for (const characterPerkId of CHARACTER_PERKS_MAP[character.id]) {
+              if (!updatedAvailablePerkIds.includes(characterPerkId)) {
+                updatedAvailablePerkIds.push(characterPerkId);
+              }
+            }
+          }
+        } else {
+          for (const character of SURVIVOR_CHARACTERS) {
+            for (const characterPerkId of CHARACTER_PERKS_MAP[character.id]) {
+              updatedAvailablePerkIds.splice(updatedAvailablePerkIds.indexOf(characterPerkId), 1);
+            }
+          }
+        }
+
+        return updatedAvailablePerkIds;
       });
     },
-    [setAvailableCharacters]
+    [selectedCharacterIds, setAvailablePerkIds]
   );
 
   const handleNameChange = useCallback(
@@ -71,7 +104,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
 
   const handlePerkSelect = useCallback(
     (id: string) => (_: ChangeEvent<HTMLInputElement>) => {
-      setAvailablePerks((a) => {
+      setAvailablePerkIds((a) => {
         if (a.includes(id)) {
           return a.filter((c) => c !== id);
         }
@@ -79,18 +112,18 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
         return [...a, id];
       });
     },
-    [setAvailablePerks]
+    [setAvailablePerkIds]
   );
 
   const handlePerkSelectAll = useCallback(
     (_: ChangeEvent<HTMLInputElement>) => {
-      setAvailablePerks((a) => {
+      setAvailablePerkIds((a) => {
         if (a.length === SURVIVOR_PERKS.length) return [];
 
         return SURVIVOR_PERKS.map((c) => c.id);
       });
     },
-    [setAvailablePerks]
+    [setAvailablePerkIds]
   );
 
   const handleSubmit = useCallback(
@@ -99,13 +132,12 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
 
       updatePlayer(player.id, {
         ...player,
-        availableCharacters,
-        availablePerks,
+        availablePerkIds,
         name,
       });
       onClose();
     },
-    [availableCharacters, availablePerks, name, onClose, player, updatePlayer]
+    [availablePerkIds, name, onClose, player, updatePlayer]
   );
 
   return (
@@ -118,7 +150,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
         <summary>Available Perks by Character</summary>
         <p>
           <input
-            checked={availableCharacters.length === SURVIVOR_CHARACTERS.length}
+            checked={selectedCharacterIds.length === SURVIVOR_CHARACTERS.length}
             id="character-all"
             name="character-all"
             onChange={handleCharacterSelectAll}
@@ -130,7 +162,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
           {SURVIVOR_CHARACTERS.map((character) => (
             <Fragment key={character.id}>
               <input
-                checked={availableCharacters.includes(character.id)}
+                checked={selectedCharacterIds.includes(character.id)}
                 id={`character-${character.id}`}
                 name={`character-${character.id}`}
                 onChange={handleCharacterSelect(character.id)}
@@ -147,7 +179,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
         <summary>Available Perks (Individually selected)</summary>
         <p>
           <input
-            checked={availablePerks.length === SURVIVOR_PERKS.length}
+            checked={availablePerkIds.length === SURVIVOR_PERKS.length}
             id="perk-all"
             name="perk-all"
             onChange={handlePerkSelectAll}
@@ -159,7 +191,7 @@ export const EditPlayerDialog: FC<EditPlayerDialogProps> = ({
           {SURVIVOR_PERKS.map((perk) => (
             <Fragment key={perk.id}>
               <input
-                checked={availableCharacters.includes(perk.id)}
+                checked={availablePerkIds.includes(perk.id)}
                 id={`perk-${perk.id}`}
                 name={`perk-${perk.id}`}
                 onChange={handlePerkSelect(perk.id)}

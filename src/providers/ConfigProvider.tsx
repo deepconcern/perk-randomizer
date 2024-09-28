@@ -1,36 +1,6 @@
-import {
-  createContext,
-  FC,
-  PropsWithChildren,
-  useCallback,
-  useContext,
-  useMemo,
-  useState,
-} from "react";
+import { FC, PropsWithChildren, useCallback, useMemo, useState } from "react";
 
-type Config = {
-  isAvoidingOverlapping: boolean;
-  randomizingPlayerIds: string[];
-};
-
-const DEFAULT_CONFIG: Config = {
-  isAvoidingOverlapping: false,
-  randomizingPlayerIds: [],
-};
-
-export type ConfigData = Config & {
-  addRandomizingPlayerId: (id: string) => void;
-  removeRandomizingPlayerId: (id: string) => void;
-  toggleAvoidingOverlapping: () => void;
-};
-
-const ConfigContext = createContext<ConfigData>({
-  addRandomizingPlayerId: () => {},
-  isAvoidingOverlapping: false,
-  randomizingPlayerIds: [],
-  removeRandomizingPlayerId: () => {},
-  toggleAvoidingOverlapping: () => {},
-});
+import { Config, ConfigContext, DEFAULT_CONFIG } from "../contexts/ConfigContext";
 
 export const ConfigProvider: FC<PropsWithChildren> = ({ children }) => {
   const [config, setConfig] = useState<Config>(() => {
@@ -115,7 +85,3 @@ export const ConfigProvider: FC<PropsWithChildren> = ({ children }) => {
     <ConfigContext.Provider value={value}>{children}</ConfigContext.Provider>
   );
 };
-
-export function useConfig() {
-  return useContext(ConfigContext);
-}

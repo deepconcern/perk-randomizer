@@ -1,17 +1,15 @@
 import { FC, MouseEvent, useCallback, useState } from "react";
 
-import { usePlayers } from "../contexts/player";
-import { CHARACTER_PERKS_MAP, PERKS } from "../lib/data";
+import { useConfig } from "../hooks/useConfig";
+import { usePlayers } from "../hooks/usePlayers";
+import { PERKS } from "../lib/data";
 import { pick } from "../lib/pick";
 
 import styles from "./Randomizer.module.css";
-import { useConfig } from "../contexts/config";
 
 type RandomizedPerks = {
   [id: string]: string[];
 };
-
-export type RandomizerProps = {};
 
 export const Randomizer: FC = () => {
   const { isAvoidingOverlapping, randomizingPlayerIds } = useConfig();
@@ -31,13 +29,7 @@ export const Randomizer: FC = () => {
       for (const randomizingPlayerId of randomizingPlayerIds) {
         const player = playerMap[randomizingPlayerId];
 
-        const availablePerkIds = new Set(player.availablePerks);
-
-        for (const charactedId of player.availableCharacters) {
-          for (const characterPerkId of CHARACTER_PERKS_MAP[charactedId]) {
-            availablePerkIds.add(characterPerkId);
-          }
-        }
+        const availablePerkIds = new Set(player.availablePerkIds);
 
         // Remove used perks if avoiding overlapping
         if (isAvoidingOverlapping) {
@@ -60,7 +52,7 @@ export const Randomizer: FC = () => {
 
       setRandomizedPerks(randomizedPerks);
     },
-    [isAvoidingOverlapping, players, randomizingPlayerIds, setRandomizedPerks]
+    [isAvoidingOverlapping, playerMap, randomizingPlayerIds, setRandomizedPerks]
   );
 
   return (

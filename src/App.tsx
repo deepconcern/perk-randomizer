@@ -1,8 +1,8 @@
 import { FC } from "react";
 
-import { ConfigProvider } from "./contexts/config";
-import { PlayerProvider } from "./contexts/player";
 import { PerkRandomizerPage } from "./pages/PerkRandomizerPage";
+import { ConfigProvider } from "./providers/ConfigProvider";
+import { PlayerProvider } from "./providers/PlayerProvider";
 
 export const App: FC = () => (
   <PlayerProvider>

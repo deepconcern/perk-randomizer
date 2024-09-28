@@ -8,11 +8,12 @@ import {
 } from "react";
 
 import { EditPlayerDialog } from "../components/EditPlayerDialog";
-import { useConfig } from "../contexts/config";
+import { Randomizer } from "../components/Randomizer";
+import { useConfig } from "../hooks/useConfig";
+import { usePlayers } from "../hooks/usePlayers";
 
 import styles from "./PerkRandomizerPage.module.css";
-import { usePlayers } from "../contexts/player";
-import { Randomizer } from "../components/Randomizer";
+import { SURVIVOR_PERKS } from "../lib/data";
 
 const MIN_PLAYER_NAME_LENGTH = 3;
 
@@ -54,8 +55,7 @@ export const PerkRandomizerPage: FC = () => {
 
       setNewPlayerName("");
       const id = addPlayer({
-        availableCharacters: [],
-        availablePerks: [],
+        availablePerkIds: SURVIVOR_PERKS.map(s => s.id),
         name: newPlayerName,
       });
       addRandomizingPlayerId(id);

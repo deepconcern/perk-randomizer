@@ -1,50 +1,22 @@
-import {
-  createContext,
-  FC,
-  PropsWithChildren,
-  useCallback,
-  useContext,
-  useMemo,
-  useState,
-} from "react";
+import { FC, PropsWithChildren, useCallback, useMemo, useState } from "react";
 import { v4 as uuid } from "uuid";
 
-export type Player = {
-  availableCharacters: string[];
-  availablePerks: string[];
-  id: string;
-  name: string;
-};
-
-export type NewPlayer = Omit<Player, "id">;
-
-export type UpdatePlayer = NewPlayer;
-
-export type PlayerData = {
-  addPlayer: (newPlayer: NewPlayer) => string;
-  playerMap: { [id: string]: Player };
-  players: Player[];
-  removePlayer: (id: string) => void;
-  updatePlayer: (id: string, updatePlayer: UpdatePlayer) => void;
-};
-
-const PlayerContext = createContext<PlayerData>({
-  addPlayer: () => "default",
-  playerMap: {},
-  players: [],
-  removePlayer: () => {},
-  updatePlayer: () => null,
-});
+import {
+  NewPlayer,
+  PlayerContext,
+  PlayerMap,
+  UpdatePlayer,
+} from "../contexts/PlayerContext";
 
 export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [playerMap, setPlayerMap] = useState<{ [id: string]: Player }>(() => {
+  const [playerMap, setPlayerMap] = useState<PlayerMap>(() => {
     const storedPlayersData = localStorage.getItem("players");
 
     if (!storedPlayersData) {
       localStorage.setItem("players", JSON.stringify({}));
-      
+
       return {};
-    };
+    }
 
     try {
       return JSON.parse(storedPlayersData);
@@ -59,7 +31,7 @@ export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
       const id = uuid();
 
       setPlayerMap((playerMap) => {
-        const updatedPlayers: { [id: string]: Player } = { ...playerMap };
+        const updatedPlayers: PlayerMap = { ...playerMap };
 
         updatedPlayers[id] = {
           ...newPlayer,
@@ -81,7 +53,7 @@ export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
       setPlayerMap((playerMap) => {
         if (!playerMap[id]) return playerMap;
 
-        const updatedPlayers: { [id: string]: Player } = { ...playerMap };
+        const updatedPlayers: PlayerMap = { ...playerMap };
 
         delete updatedPlayers[id];
 
@@ -98,7 +70,7 @@ export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
       setPlayerMap((playerMap) => {
         if (!playerMap[id]) return playerMap;
 
-        const updatedPlayers: { [id: string]: Player } = { ...playerMap };
+        const updatedPlayers: PlayerMap = { ...playerMap };
 
         updatedPlayers[id] = {
           ...updatePlayer,
@@ -128,7 +100,3 @@ export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
     <PlayerContext.Provider value={value}>{children}</PlayerContext.Provider>
   );
 };
-
-export function usePlayers() {
-  return useContext(PlayerContext);
-}
